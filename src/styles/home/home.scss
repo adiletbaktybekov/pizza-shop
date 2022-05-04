@@ -1,0 +1,188 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#home {
+  background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
+  height: 6000px;
+
+
+  .slider {
+    &-img {
+      width: 400px;
+      height: 230px;
+    }
+  }
+
+  .home {
+    &-cont {
+      &-title {
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      &-selector {
+        width: 143px;
+        margin-left: 450px;
+        font-size: 14px;
+        height: 48px;
+        background: #403D3B;
+        border-radius: 5px;
+      }
+    }
+  }
+.tabs {
+  padding-top: 80px;
+}
+
+  .meal {
+    padding-top: 100px;
+
+    &-img {
+      margin-top: -50px;
+      width: 132px;
+      height: 132px;
+    }
+
+    &-cont {
+      width: 215px;
+      height: 310px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+      border-radius: 10px;
+
+      &-head {
+        &-news {
+          border-radius: 10px 5px;
+          height: 53px;
+          width: 28px;
+
+          &-new {
+            writing-mode: vertical-lr;
+          }
+        }
+      }
+
+      &-title {
+        //font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF
+      }
+
+      &-desc {
+        font-weight: 400;
+        font-size: 10px;
+        //width: 169px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      &-buttons {
+        &-btn {
+          background: #7E7E7E;
+          width: 100px;
+          height: 30px;
+          font-size: 12px;
+          border-radius: 5px;
+        }
+
+        &-btn:focus {
+          background: transparent;
+
+        }
+
+        &-btn2 {
+          background: #7E7E7E;
+          width: 100px;
+          height: 30px;
+          font-size: 12px;
+          border-radius: 5px;
+        }
+
+        &-btn2:focus {
+          background: transparent;;
+        }
+      }
+
+      &-buttons2 {
+        &-btn3 {
+          width: 173px;
+          height: 30px;
+          background: #FF7B00;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .basket {
+    &-btn {
+      font-weight: 600;
+      font-size: 14px;
+      width: 265px;
+      height: 34px;
+      background: #FF7B00;
+      border-radius: 5px;
+    }
+
+    &-prices {
+      &-title {
+        font-weight: 400;
+        font-size: 14px;
+        color: #ABBBC2;
+      }
+
+      &-desc {
+        font-size: 16px;
+
+      }
+    }
+
+    &-delete {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #FF7B00;
+      box-sizing: border-box;
+      border-radius: 5px;
+
+      &-icon {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    &-texts {
+      &-title {
+        font-size: 14px;
+      }
+
+      &-desc {
+        font-size: 12px;
+        color: #ABBBC2;
+      }
+
+    }
+
+    &-img {
+      width: 45px;
+      height: 41px;
+    }
+
+    &-buttons {
+      &-btn {
+        width: 114px;
+        height: 34px;
+        background: #FF7B00;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}

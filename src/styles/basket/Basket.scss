@@ -1,0 +1,88 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#basket {
+  background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
+  height: 1300px;
+
+  .basket {
+    &-inputs {
+     &-input {
+       width: 358px;
+       height: 50px;
+       background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+       border-radius: 5px;
+     }}
+    &-buttons {
+      &-btn {
+        width: 192px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        background: #FF7B00;
+        border-radius: 5px;
+      }
+      &-btn2 {
+        width: 192px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 5px;
+        background: linear-gradient(180deg, rgba(215, 213, 213, 0.16) 0%, rgba(72, 72, 72, 0.16) 100%);
+      }
+    }
+    &-table {
+      width: 767px;
+      height: 431px;
+      background: linear-gradient(180deg, rgba(215, 213, 213, 0.16) 0%, rgba(72, 72, 72, 0.16) 100%);
+      border-radius: 10px;
+
+      &-tr {
+        width: 767px;
+        height: 65px;
+
+        &-basket {
+          font-weight: 600;
+          font-size: 24px;
+          color: #FFFFFF;
+        }
+
+        &-delete {
+          font-weight: 500;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+      }
+
+      &-td {
+        &-img {
+          width: 93px;
+          height: 60px;
+        }
+      }
+
+      &-th {
+        &-mealTitle {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        &-mealDesc {
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+
+      &-btn {
+        width: 28px;
+        font-size: 24px;
+        height: 28px;
+        border-radius: 50%;
+        text-align: center;
+        background: #FF7B00;
+      }
+    }
+  }
+}
