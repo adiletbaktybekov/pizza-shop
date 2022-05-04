@@ -30,7 +30,7 @@ const Home = () => {
         <section id="home">
             <div className="container">
                 <div className="home">
-                    <div className="slider pt-28">
+                    <div className="slider">
 
                         <Slider {...settings}>
                             <div>
@@ -75,7 +75,7 @@ const Home = () => {
                                 <Link to="drinks">Напитки</Link>
                             </li>
                             <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="deserts">Десерты</Link>
+                                <Link to="deserts">Десерт</Link>
                             </li>
                             <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
                                 <Link to="hot">Горячее</Link>
@@ -101,312 +101,96 @@ const Home = () => {
                                             <div className="" key={el.id}>
                                                 {/*<MealCard el={el} key={el.id}/>*/}
                                                 <div className="meal flex flex-wrap basis-2/3" key={el.id}>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
+                                                <div className="meal-cont ">
+                                                    <div className="meal-cont-head flex flex-row">
+                                                        <div className="meal-cont-head-news bg-red-500">
+                                                            <h3 className="meal-cont-head-news-new text-white">New!</h3>
                                                         </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex m-0 justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
+                                                        <img src={MealImg} className="meal-img" alt=""/>
                                                     </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
+                                                    <h3 className="meal-cont-title text-white">{el.name}</h3>
+                                                    <h3 className="meal-cont-desc text-white">{el.description}</h3>
+                                                    <div className="meal-cont-buttons flex justify-center">
+                                                        <button
+                                                            className="meal-cont-buttons-btn text-white">Традиционное
+                                                        </button>
+                                                        <button
+                                                            className="meal-cont-buttons-btn2 text-white">Тонкое
+                                                        </button>
                                                     </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
+                                                    <div className="meal-cont-buttons2 flex justify-center">
+                                                        <button className="meal-cont-buttons2-btn3 text-white"
+                                                                onClick={() => dispatch(addToBasket(el))}>В Корзину
+                                                            за {el.price} c.
+                                                        </button>
                                                     </div>
                                                 </div>
+                                                <div className="meal-cont">
+                                                    <div className="meal-cont-head flex flex-row">
+                                                        <div className="meal-cont-head-news bg-red-500">
+                                                            <h3 className="meal-cont-head-news-new text-white">New!</h3>
+                                                        </div>
+                                                        <img src={MealImg} className="meal-img" alt=""/>
+                                                    </div>
+                                                    <h3 className="meal-cont-title text-white">{el.name}</h3>
+                                                    <h3 className="meal-cont-desc text-white">{el.description}</h3>
+                                                    <div className="meal-cont-buttons flex justify-center">
+                                                        <button
+                                                            className="meal-cont-buttons-btn text-white">Традиционное
+                                                        </button>
+                                                        <button
+                                                            className="meal-cont-buttons-btn2 text-white">Тонкое
+                                                        </button>
+                                                    </div>
+                                                    <div className="meal-cont-buttons2 flex justify-center">
+                                                        <button className="meal-cont-buttons2-btn3 text-white"
+                                                                onClick={() => dispatch(addToBasket(el))}>В Корзину
+                                                            за {el.price} c.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div className="meal-cont">
+                                                    <div className="meal-cont-head flex flex-row">
+                                                        <div className="meal-cont-head-news bg-red-500">
+                                                            <h3 className="meal-cont-head-news-new text-white">New!</h3>
+                                                        </div>
+                                                        <img src={MealImg} className="meal-img" alt=""/>
+                                                    </div>
+                                                    <h3 className="meal-cont-title text-white ">{el.name}</h3>
+                                                    <h3 className="meal-cont-desc text-white">{el.description}</h3>
+                                                    <div className="meal-cont-buttons flex justify-center">
+                                                        <button
+                                                            className="meal-cont-buttons-btn text-white">Традиционное
+                                                        </button>
+                                                        <button
+                                                            className="meal-cont-buttons-btn2 text-white">Тонкое
+                                                        </button>
+                                                    </div>
+                                                    <div className="meal-cont-buttons2 flex justify-center">
+                                                        <button className="meal-cont-buttons2-btn3 text-white"
+                                                                onClick={() => dispatch(addToBasket(el))}>В Корзину
+                                                            за {el.price} c.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             </div>}>
                                         </Route>
                                         <Route path="combo" element={
                                             <div className="" key={el.id}>
                                                 <div className=" meal flex flex-wrap  basis-2/3" key={el.id}>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>}>
                                         </Route>
                                         <Route path="brand-rolls" element={
                                             <div className="" key={el.id}>
                                                 <div className="meal flex flex-wrap  basis-2/3" key={el.id}>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>}>
                                         </Route>
                                         <Route path="bake-rolls" element={
                                             <div className="" key={el.id}>
                                                 <div className="meal  flex flex-wrap  basis-2/3" key={el.id}>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="meal-cont m-5 mt-4">
-                                                        <div className="meal-cont-head flex flex-row">
-                                                            <div className="meal-cont-head-news bg-red-500">
-                                                                <h3 className="meal-cont-head-news-new text-white mt-2 ">New!</h3>
-                                                            </div>
-                                                            <img src={MealImg} className="meal-img mx-4" alt=""/>
-                                                        </div>
-                                                        <h3 className="meal-cont-title text-white pt-4">{el.name}</h3>
-                                                        <h3 className="meal-cont-desc text-white">{el.description}</h3>
-                                                        <div className="meal-cont-buttons flex justify-center mt-5">
-                                                            <button
-                                                                className="meal-cont-buttons-btn text-white">Традиционное
-                                                            </button>
-                                                            <button
-                                                                className="meal-cont-buttons-btn2 text-white">Тонкое
-                                                            </button>
-                                                        </div>
-                                                        <div className="meal-cont-buttons2 flex justify-center">
-                                                            <button className="meal-cont-buttons2-btn3 text-white mt-4"
-                                                                    onClick={() => dispatch(addToBasket(el))}>В Корзину
-                                                                за {el.price} c.
-                                                            </button>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>}>
                                         </Route>
