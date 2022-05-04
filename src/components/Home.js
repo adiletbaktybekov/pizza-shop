@@ -8,7 +8,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addToBasket, getProducts} from "../redux/action/MenuActions";
 import MealImg from "../assets/img/Image 2.svg";
 import {GET_SORTED_PRODUCTS} from "../redux/types/actionTypes";
-import MealCard from "./MealsCard/MealCard";
+// import MealCard from "./MealsCard/MealCard";
 
 const Home = () => {
     const settings = {
@@ -50,10 +50,6 @@ const Home = () => {
                             </div>
                         </Slider>
                     </div>
-                    {/*<div className="inline-block mr-2 bg-gray-600 select-none">*/}
-                    {/*    <input type="checkbox" className="checked:bg-transparent focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-20 h-10 rounded-md bg-gray-600 border-4 appearance-none cursor-pointer"/>*/}
-                    {/*</div>*/}
-
                     <div className="tabs">
                         <ul className="tabs-ul flex border-b border-gray-300">
                             <li className="px-12 inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
@@ -101,7 +97,7 @@ const Home = () => {
                                             <div className="" key={el.id}>
                                                 {/*<MealCard el={el} key={el.id}/>*/}
                                                 <div className="meal flex flex-wrap basis-2/3" key={el.id}>
-                                                <div className="meal-cont ">
+                                                <div className="meal-cont">
                                                     <div className="meal-cont-head flex flex-row">
                                                         <div className="meal-cont-head-news bg-red-500">
                                                             <h3 className="meal-cont-head-news-new text-white">New!</h3>
@@ -258,40 +254,36 @@ const Home = () => {
                                 ))
                             }
                         </div>
-                        <div className="basis-1/3">
-                            <div className="basket">
-                                <h1 className="basket-title text-white pb-5 mx-2">Корзина</h1>
-                                <div className="basket-buttons flex">
-                                    <button className="basket-buttons-btn text-white m-3 ">Пообедать в
-                                    </button>
-                                    <button className="basket-buttons-btn text-white m-3 ">Идти</button>
-                                    <button className="basket-buttons-btn text-white m-3 ">Доставка</button>
-                                </div>
-                                <h1 className="text-white ">Еда</h1>
-                                <div
-                                    className="basket-meal border-b border-solid border-gray-400  flex flex-row pt-8">
-                                    <img src={MealImg} className="basket-img" alt=""/>
-                                    <div className="basket-texts flex flex-col mx-2">
-                                        <p className="basket-texts-title text-white">Японский суп</p>
-                                        <p className="basket-texts-desc">450сом</p>
-                                    </div>
-                                    {/*<button className="basket-delete mx-32">*/}
-                                    {/*    <AiOutlineDelete style={{color: "orange"}}*/}
-                                    {/*                     className="basket-delete-icon"/>*/}
-                                    {/*</button>*/}
-                                </div>
-                                <div className="basket-prices flex flex-row pt-8">
-                                    <h1 className="basket-prices-title">Скидка</h1>
-                                    <p className="basket-prices-desc text-white mx-44">-15%</p>
-                                </div>
-                                <div className="basket-prices flex flex-row pt-8">
-                                    <h1 className="basket-prices-title">Скидка</h1>
-                                    <p className="basket-prices-desc text-white mx-44">-15%</p>
-                                </div>
-                                <button className="basket-btn text-white mx-20 mt-20">Оформить заказ
-                                </button>
-                            </div>
-                        </div>
+                        {/*<div className="basis-1/3">*/}
+                        {/*    <div className="basket">*/}
+                        {/*        <h1 className="basket-title text-white pb-5 mx-2">Корзина</h1>*/}
+                        {/*        <div className="basket-buttons flex">*/}
+                        {/*            <button className="basket-buttons-btn text-white m-3 ">Пообедать в*/}
+                        {/*            </button>*/}
+                        {/*            <button className="basket-buttons-btn text-white m-3 ">Идти</button>*/}
+                        {/*            <button className="basket-buttons-btn text-white m-3 ">Доставка</button>*/}
+                        {/*        </div>*/}
+                        {/*        <h1 className="text-white ">Еда</h1>*/}
+                        {/*        <div*/}
+                        {/*            className="basket-meal border-b border-solid border-gray-400  flex flex-row pt-8">*/}
+                        {/*            <img src={MealImg} className="basket-img" alt=""/>*/}
+                        {/*            <div className="basket-texts flex flex-col mx-2">*/}
+                        {/*                <p className="basket-texts-title text-white">Японский суп</p>*/}
+                        {/*                <p className="basket-texts-desc">450сом</p>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="basket-prices flex flex-row pt-8">*/}
+                        {/*            <h1 className="basket-prices-title">Скидка</h1>*/}
+                        {/*            <p className="basket-prices-desc text-white mx-44">-15%</p>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="basket-prices flex flex-row pt-8">*/}
+                        {/*            <h1 className="basket-prices-title">Скидка</h1>*/}
+                        {/*            <p className="basket-prices-desc text-white mx-44">-15%</p>*/}
+                        {/*        </div>*/}
+                        {/*        <button className="basket-btn text-white mx-20 mt-20">Оформить заказ*/}
+                        {/*        </button>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>

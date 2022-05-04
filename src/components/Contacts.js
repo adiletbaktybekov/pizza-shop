@@ -18,7 +18,7 @@ const Contacts = () => {
         <section id="contacts">
             <div className="container">
                 <div className="contacts">
-                    <h1 className="contacts-title pt-6 text-white flex justify-center">Контакты</h1>
+                    <h1 className="contacts-title text-white flex justify-center">Контакты</h1>
                     <ul className="contacts-ul text-white">Наши номера:
                         <li className="contacts-li">+996 700 777 800</li>
                         <li className="contacts-li">+996 700 777 800</li>
@@ -33,10 +33,10 @@ const Contacts = () => {
                             mapElement={<div style={{height: `100%`}}/>}
                         />
                     </div>
-                    <div className="form pt-12 flex">
+                    <div className="form flex">
                         <div className="form1">
                             <form className="">
-                                <p className="form-desc text-white pt-5">Выберите город</p>
+                                <p className="form-desc text-white">Выберите город</p>
                                 <select className='form-select'>
                                     <option>Бишкек</option>
                                     <option>Ош</option>
@@ -46,22 +46,22 @@ const Contacts = () => {
                                     <option>Ыссык-Кол</option>
                                     <option>Чуй</option>
                                 </select>
-                                <p className="form-desc text-white pt-5">Тема</p>
+                                <p className="form-desc text-white">Тема</p>
                                 <select className='form-select'>
                                     <option>Обслуживание клиентов</option>
                                     <option>Техническая поддержка</option>
                                     <option>Общая помощь</option>
                                     <option>Информация о франчайзинге</option>
                                 </select>
-                                <p className="form-desc text-white pt-10">Нажимая "Отправить", вы соглашаетесь с
+                                <p className="form-desc text-white">Нажимая "Отправить", вы соглашаетесь с
                                     условиями обработки данных</p>
                             </form>
                         </div>
                         <div className="form2 ">
                             <form className=" flex flex-col">
-                                <p className="form-desc text-white pt-5">Опишите суть вопроса, ситуации</p>
-                                <input type="text" className="form-text p-4 pt-5" placeholder="Опишите суть вопроса, ситуации. . ."/>
-                                   <button className="form-btn mt-5 text-white" onClick={() => ContactSetModalActive(true)}>Отправить</button>
+                                <p className="form-desc text-white ">Опишите суть вопроса, ситуации</p>
+                                <input type="text" className="form-text  " placeholder="Опишите суть вопроса, ситуации. . ."/>
+                                   <button className="form-btn text-white" onClick={() => ContactSetModalActive(true)}>Отправить</button>
                             </form>
                             <ContactsModal active={ContactModalActive} setActive={ContactSetModalActive}/>
                         </div>

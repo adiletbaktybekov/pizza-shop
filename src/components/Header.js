@@ -39,7 +39,7 @@ const Header = () => {
                             </Link>
 
                             <Link to="/basket" className="flex flex-row text-white">
-                                <TiShoppingCart style={{color: "white"}} className="header-cart m-2"/>
+                                <TiShoppingCart style={{color: "white"}} className="header-cart"/>
                                 {quantity}
                             </Link>
                         </div>
@@ -49,7 +49,6 @@ const Header = () => {
                 <div className="header2 flex justify-between pt-12">
                     <p className="header2-calendar text-white pt-2">Вторник 2 Март 2022</p>
                     <input type="search" placeholder="Поиск еды, десерты и т.д." className="header2-search  "/>
-                  dflsnr
                 </div>
             </div>
         </header>

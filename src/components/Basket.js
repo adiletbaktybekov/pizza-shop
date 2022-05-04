@@ -18,8 +18,8 @@ const Basket = () => {
     return (
         <section id="basket">
             <div className="container">
-                <div className="basket py-8">
-                    <div className="basket-table py-5 overflow-x-auto">
+                <div className="basket ">
+                    <div className="basket-table  overflow-x-auto">
                         <table className="w-full text-sm text-white">
                             <thead
                                 className="">
@@ -42,14 +42,14 @@ const Basket = () => {
                                     <tbody>
                                     <tr className="border-b flex justify-between border-gray-500">
                                         <th scope="row"
-                                            className="py-4 flex flex-row text-white">
+                                            className=" flex flex-row text-white">
                                             <td>{idx + 1}</td>
                                             <img src={MealImg} className="basket-table-td-img" alt=""/>
                                             <div className="basket-table-th flex flex-col align-middle">
                                                 <h3 className="basket-table-th-mealTitle">{el.name}</h3>
                                             </div>
                                         </th>
-                                        <td className="py-7">
+                                        <td className="">
                                             <button className="basket-table-btn text-white"
                                                     onClick={() => dispatch({
                                                         type: "DECREASE_QUANTITY",
@@ -66,10 +66,10 @@ const Basket = () => {
                                                 +
                                             </button>
                                         </td>
-                                        <td className="py-7">
+                                        <td className="">
                                             {el.price * el.quantity}
                                         </td>
-                                        <td className="py-3 mr-3">
+                                        <td className=" ">
                                             <button
                                                 onClick={() => dispatch({
                                                     type: "REMOVE_FROM_BASKET",
@@ -83,19 +83,14 @@ const Basket = () => {
                                     </tbody>
                                 ))
                             }
-                            <h1 className="text-center my-4"> Итого: {totalSum} </h1>
+                            <h1 className="text-center"> Итого: {totalSum} </h1>
                         </table>
                     </div>
-                    <div className="basket-buttons py-5">
-                        <button className="basket-buttons-btn text-white m-5">Доставка</button>
-                        <button className="basket-buttons-btn2 text-white m-5">Самовызов</button>
+                    <div className="basket-buttons ">
+                        <button className="basket-buttons-btn text-white">Доставка</button>
+                        <button className="basket-buttons-btn2 text-white">Самовызов</button>
                     </div>
                     <div className="basket-inputs flex flex-col columns-3xs">
-                        <input type="text" className="basket-inputs-input"/>
-                        <input type="text" className="basket-inputs-input"/>
-                        <input type="text" className="basket-inputs-input"/>
-                        <input type="text" className="basket-inputs-input"/>
-                        <input type="text" className="basket-inputs-input"/>
                         <input type="text" className="basket-inputs-input"/>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import {ADD_TO_BASKET, GET_PRODUCTS} from "../types/actionTypes";
 import axios from "axios";
 
 export const addToBasket = (item) => {
-    return {type: ADD_TO_BASKET, payload:item}
+    return {type: "ADD_TO_BASKET", payload:item}
 }
 
 export const getProducts = ()=> {
