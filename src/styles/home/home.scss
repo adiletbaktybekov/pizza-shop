@@ -2,9 +2,9 @@
   background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
   height: 6000px;
 
-
   .slider {
     padding-top: 50px;
+
     &-img {
       width: 400px;
       height: 230px;
@@ -28,9 +28,10 @@
       }
     }
   }
-.tabs {
-  padding-top: 80px;
-}
+
+  .tabs {
+    padding-top: 80px;
+  }
 
   .meal {
     padding-top: 100px;
