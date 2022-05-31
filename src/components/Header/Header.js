@@ -1,13 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
-import Logo from '../assets/img/image 55.png'
+import Logo from '../../assets/img/headerLogo.png'
 import {TiShoppingCart} from "react-icons/ti";
 import {useSelector} from "react-redux";
-import {Modal} from "./Modals/Modal";
-
 const Header = () => {
-    const [modalActive, setModalActive] = useState(true)
-    // const dispatch = useDispatch()
     const {basket} = useSelector(s => s)
     const quantity = basket.reduce((acc, el) => {
         return acc + el.quantity
@@ -32,7 +28,7 @@ const Header = () => {
                                 <option>Kg</option>
                             </select>
                             <Link to="/admin">
-                                <button className="header-btn text-white m-2" onClick={() => setModalActive(true)}>
+                                <button className="header-btn text-white m-2">
                                     Вход
                                 </button>
 
@@ -44,7 +40,6 @@ const Header = () => {
                             </Link>
                         </div>
                     </div>
-                    <Modal active={modalActive} setActive={setModalActive}/>
                 </div>
                 <div className="header2 flex justify-between pt-12">
                     <p className="header2-calendar text-white pt-2">Вторник 2 Март 2022</p>

@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
-import {ContactsModal} from "./Modals/ContactsModal";
 // import {Link} from "react-router-dom";
 
 function Map() {
@@ -13,7 +12,6 @@ function Map() {
 }
 const WrappedMap = withScriptjs(withGoogleMap(Map))
 const Contacts = () => {
-    const [ContactModalActive, ContactSetModalActive] = useState(true)
     return (
         <section id="contacts">
             <div className="container">
@@ -61,10 +59,9 @@ const Contacts = () => {
                             <form className=" flex flex-col">
                                 <p className="form-desc text-white ">Опишите суть вопроса, ситуации</p>
                                 <input type="text" className="form-text  " placeholder="Опишите суть вопроса, ситуации. . ."/>
-                                   <button className="form-btn text-white" onClick={() => ContactSetModalActive(true)}>Отправить</button>
+                                   <button className="form-btn text-white">Отправить</button>
                             </form>
-                            <ContactsModal active={ContactModalActive} setActive={ContactSetModalActive}/>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>

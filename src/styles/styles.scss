@@ -1,3 +1,5 @@
+// ------- STYLES.SCSS -------
+
 @import "./reset";
 @import "../styles/header/header";
 @import "../styles/home/home";
@@ -7,14 +9,11 @@
 @import "../styles/sale-details/sale-details";
 @import "../styles/footer/footer";
 @import "../styles/admin/admin";
-@import "basket/basket";
-@import "../styles/modals/modal";
+@import "../styles/basket/basket";
 
 
-// MEDIA.SCSS
+// ------ MEDIA.SCSS -------
 
-
-@import "../media/media";
 @import "../media/contacts/contacts.scss";
 @import "../media/header/header";
 @import "../media/about/about";
@@ -23,6 +22,5 @@
 @import "../media/footer/footer";
 @import "../media/header/header";
 @import "../media/home/home";
-@import "../media/modals/modals";
 @import "../media/sale-details/sale-details";
 @import "../media/sale/sale";

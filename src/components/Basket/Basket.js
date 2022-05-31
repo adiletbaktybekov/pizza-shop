@@ -2,8 +2,9 @@ import React, {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {BsFillTrashFill} from "react-icons/bs";
 import {ImCross} from "react-icons/im"
-import MealImg from '../assets/img/Image 2.svg';
-import {getProducts} from "../redux/action/MenuActions";
+import MealImg from '../../assets/img/meal 2.svg';
+import {getPizza} from "../../redux/action/Pizza";
+import {getDrinks} from "../../redux/action/Drinks";
 
 const Basket = () => {
     const basket = useSelector(s => s.basket)
@@ -13,7 +14,11 @@ const Basket = () => {
         return el.quantity * el.price + acc
     }, 0)
     useEffect(() => {
-        dispatch(getProducts())
+        dispatch(getPizza())
+    }, [])
+
+    useEffect(() => {
+        dispatch(getDrinks())
     }, [])
     return (
         <section id="basket">

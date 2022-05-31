@@ -1,5 +1,5 @@
 import React from 'react';
-import pizza from "../assets/img/image 52345.png"
+import pizza from "../../assets/img/meal52345.png"
 import {Link, Route} from "react-router-dom";
 
 const Sale = () => {

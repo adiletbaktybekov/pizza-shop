@@ -5,29 +5,14 @@ import {
     GET_PRODUCTS,
     GET_SORTED_PRODUCTS,
     GET_SINGLE_PRODUCT
-} from "../types/actionTypes";
+} from "../action/types/actionTypes";
 
 const initialState = {
-    catalog: [
-        // {
-        //     id: 1,
-        //     description: "Готовить классическую итальянскую",
-        //     image: "https://motion-food.herokuapp.com/media/image/pizza/Unknown.jpeg",
-        //     name: "Пицца Пепперони",
-        //     price: 580,
-        // },
-        // {
-        //     id: 2,
-        //     description: "С колбасой, очень вкусно",
-        //     image: "https://motion-food.herokuapp.com/media/image/pizza/photo_2022-04-12_12-21-21_5xKnHAS.jpg",
-        //     name: "Маргарита",
-        //     price: 400,
-        // },
-
-    ],
+    catalog: [],
     singleProduct: [],
     basket: [],
-    products: []
+    products: [],
+    about:[],
 }
 
 

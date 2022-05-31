@@ -1,3 +1,32 @@
 #footer {
   background: #000;
+  height: 330px;
+
+  .footer {
+    padding-top: 50px;
+
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &-soc {
+      margin: 0 5px;
+    }
+    &-cards {
+      margin: 0 15px;
+    }
+
+  }
+
+  .links {
+    //padding-left: -50px;
+    //padding-top: 20px;
+    &-text {
+      margin: 10px 0;
+      padding-top: 5px;
+    }
+    &-text1 {
+      padding-top: 5px;
+    }
+   }
 }

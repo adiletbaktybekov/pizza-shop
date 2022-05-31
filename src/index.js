@@ -7,7 +7,6 @@ import "../src/styles/styles.scss";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import {Provider} from "react-redux";
 import {store} from "./redux/store/store";
-import "./components/Modals/contactsModal.css";
 
 ReactDOM.render(
     <BrowserRouter>

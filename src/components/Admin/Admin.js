@@ -1,16 +1,12 @@
-import React, {useState} from 'react';
-import MealImg from '../assets/img/Image 2.svg';
+import React from 'react';
+import MealImg from '../../assets/img/meal 2.svg';
 import {AiOutlineUser} from "react-icons/ai";
-import {Modal} from "./Modals/Modal";
 
 const Admin = () => {
-
-    // const [modalActive,setModalActive] = useState(true)
     return (
         <section id="admin">
             <div className="container">
                 <div className="admin flex flex-row">
-                    {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
                     <div className="about my-20 flex justify-center">
                         <div className="about-cont flex flex-col">
                             <AiOutlineUser className="about-img  " style={{
@@ -42,14 +38,13 @@ const Admin = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="adress  ">
+                        <div className="adress">
                             <h1 className="history-title text-white">Адрес доставки</h1>
                         </div>
                         <div className="buy">
                             <h1 className="history-title text-white">Оплата</h1>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

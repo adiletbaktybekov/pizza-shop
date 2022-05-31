@@ -1,19 +1,33 @@
 #saleDetails {
   background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
-  height: 900px;
-  .saleDetails {
 
-  }
-  .cont {
-    &-title{
-      font-weight: 600;
-      font-size: 24px;
+  .saleDetails {
+    display: flex;
+    justify-content: center;
+    &-cont {
+    padding-top: 50px;
+    display: flex;
+
+    flex-direction: column;
+
     }
-    &-desc  {
-      width: 600px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
+    &-back {
+      padding-top: -4px;
+    }
+
+    .cont {
+
+      &-title {
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      &-desc {
+        width: 600px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+      }
     }
   }
 }
