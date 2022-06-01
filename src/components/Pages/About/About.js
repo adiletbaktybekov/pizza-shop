@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {About1} from "../../redux/action/About";
+import {About1} from "../../../redux/action/About";
 
 
 const About = () => {

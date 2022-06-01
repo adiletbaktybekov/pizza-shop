@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Logo from '../../assets/img/headerLogo.png'
 import {TiShoppingCart} from "react-icons/ti";
 import {useSelector} from "react-redux";
+
 const Header = () => {
     const {basket} = useSelector(s => s)
     const quantity = basket.reduce((acc, el) => {
@@ -22,18 +23,6 @@ const Header = () => {
                             <Link to="/contacts" className="header-nav-item text-white m-8">Контакты</Link>
                         </div>
                         <div className="header-buttons flex">
-                            <select className="header-sel m-2">
-                                <option>Ru</option>
-                                <option>En</option>
-                                <option>Kg</option>
-                            </select>
-                            <Link to="/admin">
-                                <button className="header-btn text-white m-2">
-                                    Вход
-                                </button>
-
-                            </Link>
-
                             <Link to="/basket" className="flex flex-row text-white">
                                 <TiShoppingCart style={{color: "white"}} className="header-cart"/>
                                 {quantity}

@@ -12,7 +12,7 @@ const initialState = {
     singleProduct: [],
     basket: [],
     products: [],
-    about:[],
+    about: [],
 }
 
 

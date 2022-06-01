@@ -7,7 +7,7 @@ export const getPizza = () => {
         axios(`https://motion-food.herokuapp.com/pizza-list/`)
             .then(({data}) => {
                 console.log(data, "PIZZA")
-                dispatch({type: GET_PRODUCTS, ADD_TO_BASKET, payload: data.results})
+                dispatch({type: GET_PRODUCTS, payload: data.results})
             })
     }
 }

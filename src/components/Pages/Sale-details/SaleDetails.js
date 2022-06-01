@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {IoIosArrowBack} from "react-icons/io"
-import pizza1234 from "../../assets/img/meal52345.png"
-import pizza from "../../assets/img/meal Ae7jQFDTPk4 (1).png"
+import pizza1234 from "../../../assets/img/meal52345.png"
+import pizza from "../../../assets/img/meal Ae7jQFDTPk4 (1).png"
 // import Slider from "react-slick";
 
 const SaleDetails = () => {

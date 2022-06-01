@@ -2,9 +2,8 @@ import React, {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {BsFillTrashFill} from "react-icons/bs";
 import {ImCross} from "react-icons/im"
-import MealImg from '../../assets/img/meal 2.svg';
-import {getPizza} from "../../redux/action/Pizza";
-import {getDrinks} from "../../redux/action/Drinks";
+import {getPizza} from "../../../redux/action/Pizza";
+import {getDrinks} from "../../../redux/action/Drinks";
 
 const Basket = () => {
     const basket = useSelector(s => s.basket)
@@ -49,7 +48,7 @@ const Basket = () => {
                                         <th scope="row"
                                             className=" flex flex-row text-white">
                                             <td>{idx + 1}</td>
-                                            <img src={MealImg} className="basket-table-td-img" alt=""/>
+                                            <img src={el.image} className="basket-table-td-img" alt=""/>
                                             <div className="basket-table-th flex flex-col align-middle">
                                                 <h3 className="basket-table-th-mealTitle">{el.name}</h3>
                                             </div>
