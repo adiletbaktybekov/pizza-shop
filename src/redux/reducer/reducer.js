@@ -7,6 +7,7 @@ import {
     GET_SINGLE_PRODUCT
 } from "../action/types/actionTypes";
 
+
 const initialState = {
     catalog: [],
     singleProduct: [],
@@ -19,12 +20,12 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
 
     switch (action.type) {
-
         case GET_SINGLE_PRODUCT:
             return {...state, singleProduct: action.payload}
 
         case GET_PRODUCTS :
             return {...state, catalog: action.payload}
+
 
         case "ADD_TO_BASKET":
             console.log("payload:", action.payload)
@@ -38,10 +39,11 @@ export const reducer = (state = initialState, action) => {
                 }
             }
 
-
             return {...state, basket: [...state.basket, {...action.payload, quantity: 1}]}
 
             return {...state, basket: [...state.basket, action.payload]}
+
+
         case DECREASE_QUANTITY:
             if (state.basket[action.payload].quantity > 1) {
                 return {
@@ -53,33 +55,21 @@ export const reducer = (state = initialState, action) => {
         case REMOVE_FROM_BASKET:
             return {...state, basket: state.basket.filter(el => el.id !== action.payload)}
 
-        case GET_SORTED_PRODUCTS:
+        case "GET_SORTED_PRODUCTS":
             const sortedProducts = [...state.catalog]
-            if (action.payload === "highest") {
+            if (action.payload === "sale") {
                 return {
                     ...state, catalog: sortedProducts.sort((a, b) => {
                         return a.price - b.price
                     })
                 }
-            } else if (action.payload === "lowest") {
-                return {
-                    ...state, catalog: sortedProducts.sort((a, b) => {
-                        return b.price - a.price
-                    })
-                }
-            } else if (action.payload === "a-z") {
+            } else if (action.payload === "alphabet") {
                 return {
                     ...state, catalog: sortedProducts.sort((a, b) =>
                         a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1)
                 }
-            } else if (action.payload === "z-a") {
-                return {
-                    ...state, catalog: sortedProducts.sort((a, b) =>
-                        a.title.toLowerCase() > b.title.toLowerCase() ? -1 : 1)
-                }
             }
             return {...state, catalog: sortedProducts}
-
         default:
             return state
     }

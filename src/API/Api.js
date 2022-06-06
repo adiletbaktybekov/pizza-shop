@@ -1,6 +1,6 @@
-import axios from "axios";
-import {API} from "./publicApi";
+    import axios from "axios";
+    import {API} from "./publicApi";
 
-const $api = axios.create({
-    baseURL: API
-})
+    const $api = axios.create({
+        baseURL: API
+    })

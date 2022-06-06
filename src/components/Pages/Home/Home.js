@@ -1,27 +1,52 @@
 import React, {useEffect} from 'react';
-// import Slider from "react-slick";
-// import Slide from '../assets/img/unsplash_gJW-pfaqihA.png'
-// import Slide2 from '../assets/img/unsplash_msdTDnUxtEA.png'
-// import Slide3 from '../assets/img/unsplash_UxRhrU8fPHQ.png';
+import Slider from "react-slick";
+import Slide from '../../../assets/img/unsplash_gJW-pfaqihA.png'
+import Slide2 from '../../../assets/img/unsplash_msdTDnUxtEA.png'
 import {Routes, Link, Route} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {GET_SORTED_PRODUCTS} from "../../../redux/action/types/actionTypes";
 import {getPizza} from "../../../redux/action/Pizza";
 import {getDrinks} from "../../../redux/action/Drinks";
-import PizzaCard from "../../meals-cards/PizzaCard";
-import DrinksCard from "../../meals-cards/DrinksCard";
+import PizzaCard from "../../Cards/meals-cards/PizzaCard";
+import DrinksCard from "../../Cards/meals-cards/DrinksCard";
 
 
 const Home = () => {
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 2,
-    //     arrows: false,
-    //
-    // }
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
+    }
     const catalog = useSelector(state => state.catalog)
     console.log(catalog, "catalog")
     const dispatch = useDispatch()
@@ -33,87 +58,79 @@ const Home = () => {
     }, [])
     return (
         <section id="home">
-            <div className="container">
-                <div className="home">
-                    <div className="slider">
-                        {/*    <Slider {...settings}>*/}
-                        {/*        <div>*/}
-                        {/*            <img src={Slide} className="slider-img" alt=""/>*/}
-                        {/*        </div>*/}
-                        {/*        <div>*/}
-                        {/*            <img src={Slide2} className="slider-img" alt=""/>*/}
-                        {/*        </div>*/}
-                        {/*        <div>*/}
-                        {/*            <img src={Slide3} className="slider-img" alt=""/>*/}
-                        {/*        </div>*/}
-                        {/*        <div>*/}
-                        {/*            <img src={Slide3} className="slider-img" alt=""/>*/}
-                        {/*        </div>*/}
-                        {/*        <div>*/}
-                        {/*            <img src={Slide3} className="slider-img" alt=""/>*/}
-                        {/*        </div>*/}
-                        {/*    </Slider>*/}
+            <div className="slider">
+                <Slider {...settings}>
+                    <div>
+                        <img src={Slide} className="slider-img" alt=""/>
                     </div>
-                    <div className="tabs">
-                        <ul className="tabs-ul flex border-b border-gray-300">
-                            <li className="px-12 inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="">Пиццы</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="combo">Комбо</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="brand-rolls">Фирменные роллы</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="bake-rolls">Запеченные роллы</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="sets">Сеты</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="drinks">Напитки</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="deserts">Десерт</Link>
-                            </li>
-                            <li className="px-12  inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                <Link to="hot">Горячее</Link>
-                            </li>
-                        </ul>
+                    <div>
+                        <img src={Slide2} className="slider-img" alt=""/>
                     </div>
-                    <div className="home-cont flex justify-start pt-12">
-                        <h1 className="home-cont-title text-white">Выбрать блюда</h1>
-                        <select className="home-cont-selector text-white"
-                                onChange={(e) => dispatch({type: GET_SORTED_PRODUCTS, payload: e.target.value})}>
-                            <option value="highest">По ценам: Самые дорогие</option>
-                            <option value="lowest">По ценам: Самые дешёвые</option>
-                            <option value="a-z">От а до я</option>
-                            <option value="z-a">От я до а</option>
-                            <option value="z-a">По популярности</option>
-                            <option value="z-a">По алфавиту</option>
-                            <option value="z-a">От я до а</option>
-                            <option value="z-a">По алфавиту</option>
-                        </select>
+                    <div>
+                        <img src={Slide} className="slider-img" alt=""/>
                     </div>
-                    <div className="home-cont flex flex-row flex-wrap">
-                        <div className="">
-                            {
-                                catalog.map(el => (
-                                    <Routes>
-                                        <Route path="" element={
-                                            <div className="meal flex flex-wrap" key={el.id}>
+                    <div>
+                        <img src={Slide} className="slider-img" alt=""/>
+                    </div>
+                    <div>
+                        <img src={Slide2} className="slider-img" alt=""/>
+                    </div>
+                    <div>
+                        <img src={Slide} className="slider-img" alt=""/>
+                    </div>
+                </Slider>
+                <div className="container">
+                    <div className="home">
+
+                        <div className="tabs">
+                            <ul className="tabs-ul flex justify-center border-b border-gray-300">
+                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
+                                    <Link to="">
+                                        <h1 className="tabs-title">Пиццы</h1>
+                                    </Link>
+                                </li>
+                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
+                                    <Link to="combo">
+                                        <h1 className="tabs-title">Комбо</h1>
+                                    </Link>
+                                </li>
+                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
+                                    <Link to="sushi">
+                                        <h1 className="tabs-title">Суши</h1>
+                                    </Link>
+                                </li>
+                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
+                                    <Link to="drinks">
+                                        <h1 className="tabs-title">Напитки</h1>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="home-cont flex justify-between pt-12">
+                            <h1 className="home-cont-title text-white">Выбрать блюда</h1>
+                            <select className="home-cont-selector text-white"
+                                    onChange={(e) => dispatch({type: "GET_SORTED_PRODUCTS", payload: e.target.value})}>
+                                <option value="alphabet">По алфавиту</option>
+                                <option value="sale">По цене</option>
+                                <option value="new">Новинки</option>
+                            </select>
+                        </div>
+                        <div className="home-cont">
+                            <div className="grid grid-cols-4">
+                                {
+                                    catalog.map(el => (
+                                        <Routes>
+                                            <Route path="" element={
                                                 <PizzaCard el={el} key={el.id}/>
-                                            </div>
-                                        }/>
-                                        <Route path="drinks" element={
-                                            <div className="meal flex flex-wrap" key={el.id}>
+
+                                            }/>
+                                            <Route path="/drinks" element={
                                                 <DrinksCard el={el} key={el.id}/>
-                                            </div>
-                                        }/>
-                                    </Routes>
-                                ))
-                            }
+                                            }/>
+                                        </Routes>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

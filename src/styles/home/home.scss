@@ -2,7 +2,7 @@
   background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
 
   .slider {
-    //padding-top: 50px;
+    padding-top: 100px;
 
     &-img {
       width: 400px;
@@ -12,6 +12,8 @@
 
   .home {
     &-cont {
+      padding-top: 100px;
+
       &-title {
         font-weight: 600;
         font-size: 20px;
@@ -30,157 +32,124 @@
 
   .tabs {
     padding-top: 80px;
+    &-title {
+      margin: 0 30px;
+      font-weight: 500;
+      font-size: 18px;
+    }
   }
 
   .meal {
-    padding-top: 100px;
-    //margin: 0 30px;
+    width: 250px;
+    height: 350px;
+    margin: 50px 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 10px;
 
-    &-img {
-      margin-top: -70px;
-      width: 132px;
-      height: 132px;
-      margin-left: 15px;
-      border-radius: 50%;
-    }
+    &-asset {
+      margin-top: -80px;
+      margin-left: 30px;
 
-    &-cont {
-      width: 215px;
-      height: 310px;
-      margin: 0 20px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-      border-radius: 10px;
-
-      &-head {
-        &-news {
-          border-radius: 10px 5px;
-          height: 53px;
-          width: 28px;
-
-          &-new {
-            writing-mode: vertical-lr;
-          }
-        }
-      }
-
-      &-title {
-        font-size: 18px;
-        text-align: center;
-        color: #FFFFFF
-      }
-
-      &-desc {
-        font-weight: 400;
-        font-size: 10px;
-        color: #FFFFFF;
-        text-align: center;
-      }
-
-      &-buttons {
-        &-btn {
-          background: #7E7E7E;
-          width: 100px;
-          height: 30px;
-          font-size: 12px;
-          border-radius: 5px;
-        }
-
-        &-btn:focus {
-          background: transparent;
-
-        }
-
-        &-btn2 {
-          background: #7E7E7E;
-          width: 100px;
-          height: 30px;
-          font-size: 12px;
-          border-radius: 5px;
-        }
-
-        &-btn2:focus {
-          background: transparent;;
-        }
-      }
-
-      &-buttons2 {
-        &-btn3 {
-          width: 173px;
-          height: 30px;
-          background: #FF7B00;
-          border-radius: 5px;
-        }
-      }
-    }
-  }
-
-  .basket {
-    &-btn {
-      font-weight: 600;
-      font-size: 14px;
-      width: 265px;
-      height: 34px;
-      background: #FF7B00;
-      border-radius: 5px;
-    }
-
-    &-prices {
-      &-title {
-        font-weight: 400;
-        font-size: 14px;
-        color: #ABBBC2;
-      }
-
-      &-desc {
-        font-size: 16px;
-
-      }
-    }
-
-    &-delete {
-      width: 30px;
-      height: 30px;
-      border: 1px solid #FF7B00;
-      box-sizing: border-box;
-      border-radius: 5px;
-
-      &-icon {
-        width: 12px;
-        height: 12px;
+      &-img {
+        width: 150px;
+        height: 150px;
+        margin-left: 15px;
+        border-radius: 50%;
       }
     }
 
     &-title {
-      font-weight: 600;
+      padding-bottom: 5px;
+      padding-top: 5px;
       font-size: 20px;
+      text-align: center;
     }
 
-    &-texts {
-      &-title {
-        font-size: 14px;
-      }
-
-      &-desc {
-        font-size: 12px;
-        color: #ABBBC2;
-      }
-
+    &-desc {
+      font-weight: 400;
+      font-size: 12px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      text-align: center;
     }
 
-    &-img {
-      width: 45px;
-      height: 41px;
-    }
-
-    &-buttons {
-      &-btn {
-        width: 114px;
-        height: 34px;
+    &-buttons2 {
+      &-btn3 {
+        width: 173px;
+        height: 30px;
         background: #FF7B00;
         border-radius: 5px;
-        font-weight: 600;
-        font-size: 14px;
       }
+    }
+  }
+}
+
+.basket {
+  &-btn {
+    font-weight: 600;
+    font-size: 14px;
+    width: 265px;
+    height: 34px;
+    background: #FF7B00;
+    border-radius: 5px;
+  }
+
+  &-prices {
+    &-title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #ABBBC2;
+    }
+
+    &-desc {
+      font-size: 16px;
+
+    }
+  }
+
+  &-delete {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FF7B00;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    &-icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &-texts {
+    &-title {
+      font-size: 14px;
+    }
+
+    &-desc {
+      font-size: 12px;
+      color: #ABBBC2;
+    }
+
+  }
+
+  &-img {
+    width: 45px;
+    height: 41px;
+  }
+
+  &-buttons {
+    &-btn {
+      width: 114px;
+      height: 34px;
+      background: #FF7B00;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
     }
   }
 }

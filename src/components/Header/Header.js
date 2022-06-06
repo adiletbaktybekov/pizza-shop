@@ -22,17 +22,11 @@ const Header = () => {
                             <Link to="/about" className="header-nav-item text-white m-8">О нас</Link>
                             <Link to="/contacts" className="header-nav-item text-white m-8">Контакты</Link>
                         </div>
-                        <div className="header-buttons flex">
-                            <Link to="/basket" className="flex flex-row text-white">
+                            <Link to="/basket" className="header-btn flex flex-row text-white">
                                 <TiShoppingCart style={{color: "white"}} className="header-cart"/>
                                 {quantity}
                             </Link>
-                        </div>
                     </div>
-                </div>
-                <div className="header2 flex justify-between pt-12">
-                    <p className="header2-calendar text-white pt-2">Вторник 2 Март 2022</p>
-                    <input type="search" placeholder="Поиск еды, десерты и т.д." className="header2-search  "/>
                 </div>
             </div>
         </header>

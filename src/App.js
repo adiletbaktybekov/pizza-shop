@@ -8,7 +8,6 @@ import Contacts from "./components/Pages/Contacts/Contacts";
 import About from "./components/Pages/About/About";
 import Footer from "./components/Footer/Footer";
 import SaleDetails from "./components/Pages/Sale-details/SaleDetails";
-import PizzaCard from "./components/meals-cards/PizzaCard";
 
 
 function App() {

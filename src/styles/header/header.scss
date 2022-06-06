@@ -1,7 +1,8 @@
 #header {
   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Gluten:wght@500&display=swap');
-  background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
-  height: 200px;
+  //background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
+  background: #000;
+  height: 100px;
 
   .header {
     padding-top: 20px;
@@ -15,8 +16,8 @@
 
       &-item {
         font-weight: bold;
-        margin: 0 10px;
-        font-size: 14px;
+        margin: 0 20px;
+        font-size: 16px;
       }
     }
 
@@ -24,25 +25,8 @@
       padding-left: 500px;
     }
 
-    &-buttons {
-      padding-left: 70px;
-    }
-
-    &-sel {
-      border-radius: 5px;
-      width: 49px;
-      color: #FFFF;
-      background: #000;
-      height: 30px;
-      margin-top: 20px;
-    }
-
     &-btn {
-      background: #FF7B00;
-      border-radius: 5px;
-      width: 66px;
-      height: 30px;
-      margin-top: 20px;
+      margin-left: 300px;
     }
 
     &-cart {
@@ -52,22 +36,4 @@
     }
   }
 
-  .header2 {
-    &-calendar {
-      color: #E0E6E9;
-      font-size: 16px;
-      font-family: 'Barlow', sans-serif;
-    }
-
-    &-search {
-      width: 633px;
-      height: 48px;
-      background: rgba(250, 250, 250, 0.2);
-      border-radius: 8px;
-      font-size: 14px;
-      font-family: 'Barlow', sans-serif;
-      color: #ABBBC2;
-      padding: 0 2%;
-    }
-  }
 }

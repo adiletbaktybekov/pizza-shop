@@ -23,6 +23,7 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "sass": "^1.49.10",
+    "slick-carousel": "^1.8.1",
     "thunk": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
