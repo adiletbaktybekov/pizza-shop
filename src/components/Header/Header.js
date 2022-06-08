@@ -17,10 +17,10 @@ const Header = () => {
                     <Link to="/"><img src={Logo} className="header-logo" alt=""/></Link>
                     <div className="header-cont flex">
                         <div className="header-nav">
-                            <Link to="/" className="header-nav-item text-white m-8">Меню</Link>
-                            <Link to="/sale" className="header-nav-item text-white m-8">Акции</Link>
-                            <Link to="/about" className="header-nav-item text-white m-8">О нас</Link>
-                            <Link to="/contacts" className="header-nav-item text-white m-8">Контакты</Link>
+                            <Link to="/" className="header-nav-item inline-block  border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900 text-white m-8">Меню</Link>
+                            <Link to="/sale" className="header-nav-item inline-block  border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900 text-white m-8">Акции</Link>
+                            <Link to="/about" className="header-nav-item inline-block border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900 text-white m-8">О нас</Link>
+                            <Link to="/contacts" className="header-nav-item inline-block border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900 text-white m-8">Контакты</Link>
                         </div>
                             <Link to="/basket" className="header-btn flex flex-row text-white">
                                 <TiShoppingCart style={{color: "white"}} className="header-cart"/>

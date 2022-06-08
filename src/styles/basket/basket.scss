@@ -1,8 +1,19 @@
 #basket {
   background: url("../../assets/img/Rectangle 104.png") no-repeat center/cover;
-  //height: 1300px;
-
+  .empty-basket {
+    height: 900px;
+    &-btn {
+      width: 100px;
+      height: 30px;
+      background: #FF7B00;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+  }
   .basket {
+    padding-top: 100px;
+    padding-bottom: 100px;
     &-inputs {
      &-input {
        width: 358px;
@@ -53,8 +64,9 @@
 
       &-td {
         &-img {
-          width: 93px;
-          height: 60px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
         }
       }
 

@@ -1,12 +1,14 @@
 import React, {useEffect} from 'react';
 import {addToBasket} from "../../Pages/Basket/Basket";
 import {useDispatch} from "react-redux";
-import {getDrinks} from "../../../redux/action/Drinks";
-const DrinksCard = ({el}) => {
+import MealImage from '../../../assets/img/meal52345.png'
+import {getFoods} from "../../../redux/action/Foods";
+
+const PizzaCard = ({el}) => {
     console.log(el)
     const dispatch = useDispatch()
     useEffect(() => {
-        dispatch(getDrinks())
+        dispatch(getFoods())
     }, [])
     return (
         <>
@@ -27,4 +29,4 @@ const DrinksCard = ({el}) => {
     );
 };
 
-export default DrinksCard;
+export default PizzaCard;

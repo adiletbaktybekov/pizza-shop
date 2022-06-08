@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from "axios";
-import {GET_PRODUCTS} from "./types/actionTypes";
+import {GET_PRODUCTS} from "../types/types";
 
 export const About1 = () => {
     return (dispatch) => {

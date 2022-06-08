@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from "axios";
-import {ADD_TO_BASKET, GET_PRODUCTS} from "./types/actionTypes";
+import {ADD_TO_BASKET, GET_PRODUCTS} from "../types/types";
 
 export const getPizza = () => {
     return (dispatch) => {

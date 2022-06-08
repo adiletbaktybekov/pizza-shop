@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
-import {addToBasket} from "../../../redux/action/MenuActions";
+import {addToBasket} from "../../Pages/Basket/Basket";
 import {getPizza} from "../../../redux/action/Pizza";
 import {useDispatch} from "react-redux";
-import MealImage from '../../../assets/img/meal52345.png'
 
 const PizzaCard = ({el}) => {
     console.log(el)
@@ -14,7 +13,7 @@ const PizzaCard = ({el}) => {
         <>
             <div className="meal">
                 <div className="meal-asset">
-                    <img src={MealImage} className="meal-asset-img" alt="photo"/>
+                    <img src={el.image} className="meal-asset-img" alt="photo"/>
                 </div>
                 <h3 className="meal-title text-white">{el.name}</h3>
                 <h3 className="meal-desc text-white">{el.description}</h3>

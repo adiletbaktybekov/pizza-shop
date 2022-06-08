@@ -5,7 +5,7 @@ import {
     GET_PRODUCTS,
     GET_SORTED_PRODUCTS,
     GET_SINGLE_PRODUCT
-} from "../action/types/actionTypes";
+} from "../types/types";
 
 
 const initialState = {

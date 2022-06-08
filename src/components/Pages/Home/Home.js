@@ -4,11 +4,13 @@ import Slide from '../../../assets/img/unsplash_gJW-pfaqihA.png'
 import Slide2 from '../../../assets/img/unsplash_msdTDnUxtEA.png'
 import {Routes, Link, Route} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {GET_SORTED_PRODUCTS} from "../../../redux/action/types/actionTypes";
+import {GET_SORTED_PRODUCTS} from "../../../redux/types/types";
 import {getPizza} from "../../../redux/action/Pizza";
 import {getDrinks} from "../../../redux/action/Drinks";
+import {getFoods} from "../../../redux/action/Foods";
 import PizzaCard from "../../Cards/meals-cards/PizzaCard";
 import DrinksCard from "../../Cards/meals-cards/DrinksCard";
+import FoodCard from "../../Cards/meals-cards/FoodCard";
 
 
 const Home = () => {
@@ -56,6 +58,9 @@ const Home = () => {
     useEffect(() => {
         dispatch(getDrinks())
     }, [])
+    useEffect(() => {
+        dispatch(getFoods())
+    }, [])
     return (
         <section id="home">
             <div className="slider">
@@ -90,11 +95,6 @@ const Home = () => {
                                     </Link>
                                 </li>
                                 <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                    <Link to="combo">
-                                        <h1 className="tabs-title">Комбо</h1>
-                                    </Link>
-                                </li>
-                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
                                     <Link to="sushi">
                                         <h1 className="tabs-title">Суши</h1>
                                     </Link>
@@ -110,6 +110,7 @@ const Home = () => {
                             <h1 className="home-cont-title text-white">Выбрать блюда</h1>
                             <select className="home-cont-selector text-white"
                                     onChange={(e) => dispatch({type: "GET_SORTED_PRODUCTS", payload: e.target.value})}>
+                                <option value="ффф">Сортировка</option>
                                 <option value="alphabet">По алфавиту</option>
                                 <option value="sale">По цене</option>
                                 <option value="new">Новинки</option>
@@ -126,6 +127,9 @@ const Home = () => {
                                             }/>
                                             <Route path="/drinks" element={
                                                 <DrinksCard el={el} key={el.id}/>
+                                            }/>
+                                            <Route path="/sushi" element={
+                                                <FoodCard el={el} key={el.id}/>
                                             }/>
                                         </Routes>
                                     ))
