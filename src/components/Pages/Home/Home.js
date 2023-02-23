@@ -11,14 +11,19 @@ import {getFoods} from "../../../redux/action/Foods";
 import PizzaCard from "../../Cards/meals-cards/PizzaCard";
 import DrinksCard from "../../Cards/meals-cards/DrinksCard";
 import FoodCard from "../../Cards/meals-cards/FoodCard";
-
+import {addToBasket} from "../Basket/Basket";
+import {TiShoppingCart} from "react-icons/ti";
+import {GiSushis, GiPizzaSlice} from "react-icons/gi";
+import laghman from '../../../assets/img/5793800.png'
+import {MdRamenDining} from "react-icons/md";
+import Tabs from "./Tabs";
 
 const Home = () => {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false,
         responsive: [
@@ -63,77 +68,58 @@ const Home = () => {
     }, [])
     return (
         <section id="home">
-            <div className="slider">
-                <Slider {...settings}>
-                    <div>
-                        <img src={Slide} className="slider-img" alt=""/>
-                    </div>
-                    <div>
-                        <img src={Slide2} className="slider-img" alt=""/>
-                    </div>
-                    <div>
-                        <img src={Slide} className="slider-img" alt=""/>
-                    </div>
-                    <div>
-                        <img src={Slide} className="slider-img" alt=""/>
-                    </div>
-                    <div>
-                        <img src={Slide2} className="slider-img" alt=""/>
-                    </div>
-                    <div>
-                        <img src={Slide} className="slider-img" alt=""/>
-                    </div>
-                </Slider>
+            <div className="homeGlobal bg-[#f4eade] pt-[100px]">
                 <div className="container">
+                    <Slider {...settings}>
+                        <div className="">
+                            <img src={Slide} className=" w-[100%] h-[100%]" alt=""/>
+                        </div>
+                        <div className="">
+                            <img src={Slide} className=" w-[100%] h-[100%]" alt=""/>
+                        </div>
+                        <div className="">
+                            <img src={Slide} className=" w-[100%] h-[100%]" alt=""/>
+                        </div>
+                        <div className="">
+                            <img src={Slide} className=" w-[100%] h-[100%]" alt=""/>
+                        </div>
+                    </Slider>
                     <div className="home">
+                        <Tabs/>
+                        <div className="pt-[100px] ">
+                            <div className="flex flex-wrap flex-row justify-center">
+                                <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>
+                                {/*{*/}
+                                {/*    catalog.map(el => (*/}
+                                {/*        <Routes>*/}
+                                {/*            <Route path="" element={*/}
+                                {/*                <PizzaCard el={el} key={el.id}/>*/}
 
-                        <div className="tabs">
-                            <ul className="tabs-ul flex justify-center border-b border-gray-300">
-                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                    <Link to="">
-                                        <h1 className="tabs-title">Пиццы</h1>
-                                    </Link>
-                                </li>
-                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                    <Link to="sushi">
-                                        <h1 className="tabs-title">Суши</h1>
-                                    </Link>
-                                </li>
-                                <li className="inline-block p-4 border-b-4 border-transparent text-white hover:text-orange-500 hover:border-orange-900">
-                                    <Link to="drinks">
-                                        <h1 className="tabs-title">Напитки</h1>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="home-cont flex justify-between pt-12">
-                            <h1 className="home-cont-title text-white">Выбрать блюда</h1>
-                            <select className="home-cont-selector text-white"
-                                    onChange={(e) => dispatch({type: "GET_SORTED_PRODUCTS", payload: e.target.value})}>
-                                <option value="ффф">Сортировка</option>
-                                <option value="alphabet">По алфавиту</option>
-                                <option value="sale">По цене</option>
-                                <option value="new">Новинки</option>
-                            </select>
-                        </div>
-                        <div className="home-cont">
-                            <div className="grid grid-cols-4">
-                                {
-                                    catalog.map(el => (
-                                        <Routes>
-                                            <Route path="" element={
-                                                <PizzaCard el={el} key={el.id}/>
-
-                                            }/>
-                                            <Route path="/drinks" element={
-                                                <DrinksCard el={el} key={el.id}/>
-                                            }/>
-                                            <Route path="/sushi" element={
-                                                <FoodCard el={el} key={el.id}/>
-                                            }/>
-                                        </Routes>
-                                    ))
-                                }
+                                {/*            }/>*/}
+                                {/*            <Route path="/drinks" element={*/}
+                                {/*                <DrinksCard el={el} key={el.id}/>*/}
+                                {/*            }/>*/}
+                                {/*            <Route path="/sushi" element={*/}
+                                {/*                <FoodCard el={el} key={el.id}/>*/}
+                                {/*            }/>*/}
+                                {/*        </Routes>*/}
+                                {/*    ))*/}
+                                {/*}*/}
                             </div>
                         </div>
                     </div>
