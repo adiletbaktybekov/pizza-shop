@@ -8,9 +8,9 @@ import {SiVisa} from "react-icons/si";
 
 const Footer = () => {
     return (
-        <section className="bg-black">
+        <section className="footer bg-black">
             <div className="container">
-                <div className="text-white pt-[50px] pb-[50px] flex flex-row flex-wrap justify-around">
+                <div className="footer-global text-white pt-[50px] pb-[50px] flex flex-row flex-wrap justify-around">
                     <div className="mx-[50px] my-[20px]">
                         <Link to="/">
                             <img src={Logo} alt=""/>

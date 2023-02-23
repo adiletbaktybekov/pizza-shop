@@ -28,10 +28,10 @@ const Home = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 912,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -39,9 +39,9 @@ const Home = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             },
             {
@@ -68,7 +68,7 @@ const Home = () => {
     }, [])
     return (
         <section id="home">
-            <div className="homeGlobal bg-[#f4eade] pt-[100px]">
+            <div className="homeGlobal bg-[#f4eade] pt-[50px]">
                 <div className="container">
                     <Slider {...settings}>
                         <div className="">
@@ -89,6 +89,201 @@ const Home = () => {
                         <div className="pt-[100px] ">
                             <div className="flex flex-wrap flex-row justify-center">
                                 <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
+                                    <div className="-mt-[80px] ml-[30px]">
+                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                    </div>
+                                    <div className="flex flex-col p-[10px]">
+                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
+                                        <div className="flex justify-center mt-[15px]">
+                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => dispatch(addToBasket())}>
+                                                В Корзину
+                                                за c.
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>                  <div className="w-[250px] h-[300px] bg-gray-400  rounded-xl mx-3 my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
