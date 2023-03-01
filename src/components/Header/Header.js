@@ -12,7 +12,7 @@ const Header = () => {
         return acc + el.quantity
     }, 0)
     return (
-        <header className="header bg-[#f4eade]">
+        <header className="header bg-white">
             <div className="container">
                 <div className="header-global flex justify-between h-[100px] text-black pt-[20px]">
                     <div className="head-logo">
@@ -21,9 +21,9 @@ const Header = () => {
                     <div className="header-nav mt-[20px]">
                         <Link to="/"
                               className="header-nav-item font-bold mx-[20px] text-[16px] inline-block  border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">Меню</Link>
-                        <Link to="/"
+                        <Link to="/about"
                               className="header-nav-item font-bold mx-[20px] text-[16px] inline-block  border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">О нас</Link>
-                        <Link to="/"
+                        <Link to="/contacts"
                               className="header-nav-item  mx-[20px] text-[16px] font-bold inline-block border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">Контакты</Link>
                     </div>
                     <div className="header-nav flex flex-col mt-[10px]">

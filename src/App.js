@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router-dom";
 import Basket from "./components/Pages/Basket/Basket";
 import Contacts from "./components/Pages/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
+import About from "./components/Pages/About/About";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path={"/*"} element={<Home/>}/>
                 <Route path="/basket" element={<Basket/>}/>
+                <Route path="/about" element={<About/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
             </Routes>
             <Footer/>
