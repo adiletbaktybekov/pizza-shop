@@ -18,14 +18,10 @@
     display: none;
   }
   .header .header-global {
-    justify-content: center;
-  }
-  .header .head-logo, .head-basket, .head-burger {
+    justify-content: space-between;
   }
   .header .head-logo {
     order: 1;
-    margin: 0 270px;
-
   }
   .header .head-basket {
     order: 2;
@@ -33,8 +29,6 @@
   .header .head-burger {
     order: 0;
   }
-
-
   #home .homeGlobal {
     padding-top: 200px;
   }
@@ -42,7 +36,7 @@
     justify-content: center;
   }
   .footer .footer-global {
-    justify-content: center;
+    justify-content: space-around;
   }
   #basket .basket-basket {
     width: 100%;
@@ -51,30 +45,12 @@
     width: 100%;
    margin: 50px 0 0 0;
   }
-
 }
-
-@media (max-width: 425px) {
-
-  .header .head-logo {
-    margin: 0 110px;
-  }
-}
-
-
-
-@media (max-width: 375px) {
-  .header .head-logo {
-    margin: 0 90px;
-  }
-}
-
 
 
 @media (max-width: 320px) {
-
-  .header .head-logo {
-    margin: 0 70px;
+ .header .logo-text {
+    font-size: 18px;
   }
 }
 

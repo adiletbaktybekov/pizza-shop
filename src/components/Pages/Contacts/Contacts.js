@@ -15,9 +15,9 @@ const Contacts = () => {
     return (
         <section id="contacts">
             <div className="container">
-                <div className="contacts">
-                    <h1 className="contacts-title text-white flex justify-center">Контакты</h1>
-                    <ul className="contacts-ul text-white">Наши номера:
+                <div className="text-black contacts">
+                    <h1 className="contacts-title  flex justify-center">Контакты</h1>
+                    <ul className="contacts-ul ">Наши номера:
                         <li className="contacts-li">+996 700 777 800</li>
                         <li className="contacts-li">+996 700 777 800</li>
                         <li className="contacts-li">+996 700 777 800</li>
@@ -32,34 +32,11 @@ const Contacts = () => {
                         />
                     </div>
                     <div className="form flex">
-                        <div className="form1">
-                            <form className="">
-                                <p className="form-desc text-white">Выберите город</p>
-                                <select className='form-select'>
-                                    <option>Бишкек</option>
-                                    <option>Ош</option>
-                                    <option>Талас</option>
-                                    <option>Жалал-Абад</option>
-                                    <option>Нарын</option>
-                                    <option>Ыссык-Кол</option>
-                                    <option>Чуй</option>
-                                </select>
-                                <p className="form-desc text-white">Тема</p>
-                                <select className='form-select'>
-                                    <option>Обслуживание клиентов</option>
-                                    <option>Техническая поддержка</option>
-                                    <option>Общая помощь</option>
-                                    <option>Информация о франчайзинге</option>
-                                </select>
-                                <p className="form-desc text-white">Нажимая "Отправить", вы соглашаетесь с
-                                    условиями обработки данных</p>
-                            </form>
-                        </div>
                         <div className="form2 ">
                             <form className=" flex flex-col">
-                                <p className="form-desc text-white ">Опишите суть вопроса, ситуации</p>
+                                <p className="form-desc  ">Опишите суть вопроса, ситуации</p>
                                 <input type="text" className="form-text  " placeholder="Опишите суть вопроса, ситуации. . ."/>
-                                   <button className="form-btn text-white">Отправить</button>
+                                   <button className="form-btn ">Отправить</button>
                             </form>
                           </div>
                     </div>

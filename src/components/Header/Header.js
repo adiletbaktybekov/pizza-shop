@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Logo from '../../assets/img/headerLogo.png'
+import LogoNew from '../../assets/img/newLogo.png'
 import {TiShoppingCart} from "react-icons/ti";
 import {useSelector} from "react-redux";
 import {BsMoonStarsFill} from "react-icons/bs";
@@ -16,7 +17,9 @@ const Header = () => {
             <div className="container">
                 <div className="header-global flex justify-between h-[100px] text-black pt-[20px]">
                     <div className="head-logo">
-                        <Link to="/"><img src={Logo} className="header-logo" alt=""/></Link>
+                        <Link className="flex items-center" to="/"><img src={LogoNew} className="w-[70px] rounded-full" alt=""/>
+                            <h1 className="logo-text uppercase mx-2 text-2xl font-bold text-red-600">My Sushi</h1>
+                        </Link>
                     </div>
                     <div className="header-nav mt-[20px]">
                         <Link to="/"
@@ -30,11 +33,9 @@ const Header = () => {
                         <a href="tel:+380441234567" className="">+38 (044) 123-45-67</a>
                         <a href="tel:+380441234567" className="">+38 (044) 123-45-67</a>
                     </div>
-                    <div>
-                        <Link to="/" className="header-nav">
-                            <BsMoonStarsFill style={{color: "#f97316"}} className="header-cart w-[30px] h-[30px] mt-[20px]"/>
-                        </Link>
-                    </div>
+                        {/*<Link to="/" className="header-nav">*/}
+                        {/*    <BsMoonStarsFill style={{color: "#f97316"}} className="header-cart w-[30px] h-[30px] mt-[20px]"/>*/}
+                        {/*</Link>*/}
                     <div className="head-basket">
                         <Link to="/basket">
                             <button

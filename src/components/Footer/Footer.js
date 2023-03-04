@@ -10,12 +10,12 @@ const Footer = () => {
     return (
         <section className="footer bg-black">
             <div className="container">
-                <div className="footer-global text-white pt-[50px] pb-[50px] flex flex-row flex-wrap justify-around">
-                    <div className="mx-[50px] my-[20px]">
-                        <Link to="/">
-                            <img src={Logo} alt=""/>
-                        </Link>
-                    </div>
+                <div className="flex justify-center">
+                    <Link to="/">
+                        <img src={Logo} alt="" className="mt-[30px]"/>
+                    </Link>
+                </div>
+                <div className="footer-global text-2xl   text-white pt-[50px] pb-[50px] flex flex-row flex-wrap justify-between">
                     <div className="links mx-[50px] my-[20px]">
                         <h1 className="footer-title">Быстрые ссылки </h1>
                         <div className="links flex flex-col">

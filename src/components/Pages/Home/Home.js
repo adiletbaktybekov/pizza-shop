@@ -88,7 +88,7 @@ const Home = () => {
                         <Tabs/>
                         <div className="pt-[100px] ">
                             <div className="home-meals flex flex-wrap flex-row justify-between">
-                                <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
@@ -103,7 +103,7 @@ const Home = () => {
                                             </button>
                                     </div>
                                     </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                </div>         <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
@@ -118,7 +118,7 @@ const Home = () => {
                                             </button>
                                     </div>
                                     </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                </div>         <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
@@ -133,7 +133,7 @@ const Home = () => {
                                             </button>
                                     </div>
                                     </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                </div>         <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
@@ -148,7 +148,7 @@ const Home = () => {
                                             </button>
                                     </div>
                                     </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                </div>         <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>
@@ -163,37 +163,7 @@ const Home = () => {
                                             </button>
                                     </div>
                                     </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
-                                    <div className="-mt-[80px] ml-[30px]">
-                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
-                                    </div>
-                                    <div className="flex flex-col p-[10px]">
-                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
-                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
-                                        <div className="flex justify-center mt-[15px]">
-                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
-                                                    onClick={() => dispatch(addToBasket())}>
-                                                В Корзину
-                                                за c.
-                                            </button>
-                                    </div>
-                                    </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
-                                    <div className="-mt-[80px] ml-[30px]">
-                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
-                                    </div>
-                                    <div className="flex flex-col p-[10px]">
-                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
-                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
-                                        <div className="flex justify-center mt-[15px]">
-                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
-                                                    onClick={() => dispatch(addToBasket())}>
-                                                В Корзину
-                                                за c.
-                                            </button>
-                                    </div>
-                                    </div>
-                                </div> <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl mx-3 my-14">
+                                </div>         <div className="w-[250px] h-[300px] shadow-2xl  rounded-xl my-14">
                                     <div className="-mt-[80px] ml-[30px]">
                                         <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
                                     </div>

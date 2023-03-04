@@ -7,7 +7,6 @@ import {FaPizzaSlice} from "react-icons/fa";
 const BurgerMenu = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     return (
-        <div className="head-burger">
             <section className="MOBILE-MENU flex lg:hidden">
                 <div className="HAMBURGER-ICON space-y-2 mt-[25px]"
                      onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -48,8 +47,7 @@ const BurgerMenu = () => {
 
                     </div>
                 </div>
-            </section>
-            <style>{`
+                <style>{`
       .hideMenuNav {
         display: none;
       }
@@ -68,7 +66,7 @@ const BurgerMenu = () => {
         align-items: center;
       }
     `}</style>
-        </div>
+            </section>
     );
 };
 
