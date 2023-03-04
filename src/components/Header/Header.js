@@ -18,7 +18,7 @@ const Header = () => {
                 <div className="header-global flex justify-between h-[100px] text-black pt-[20px]">
                     <div className="head-logo">
                         <Link className="flex items-center" to="/"><img src={LogoNew} className="w-[70px] rounded-full" alt=""/>
-                            <h1 className="logo-text uppercase mx-2 text-2xl font-bold text-red-600">My Sushi</h1>
+                            <h1 className="logo-text uppercase mx-2 text-2xl font-bold text-orange-500">My Sushi</h1>
                         </Link>
                     </div>
                     <div className="header-nav mt-[20px]">
