@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import React, {Component} from 'react';
+import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 class MapContainer extends Component {
     render() {
         const mapStyles = {
             width: '90%',
-            height: '100%',
-            // display:'flex',
-            // justifyContent:"center"
-            margin:'0 auto'
+            height: '80%',
+            margin: '0 auto'
         };
 
         return (
@@ -16,7 +14,6 @@ class MapContainer extends Component {
                 google={this.props.google}
                 zoom={14}
                 style={mapStyles}
-                // style={{ width: '100%', height: '100%', position: 'relative' }}
                 initialCenter={{
                     lat: 55.701965804423956,
                     lng: 37.79574843245193

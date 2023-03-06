@@ -15,8 +15,8 @@ const BurgerMenu = () => {
                     <span className="block h-1 w-10 bg-orange-500"></span>
                 </div>
                 <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                    <div className="absolute top-0 right-0 px-8 py-8">
-                        <svg onClick={() => setIsNavOpen(false)} className="h-16 w-16 text-orange-500"
+                    <div className="absolute top-0 left-0 px-8 py-8">
+                        <svg onClick={() => setIsNavOpen(false)} className="h-14 w-14 text-orange-500"
                              viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"/>
