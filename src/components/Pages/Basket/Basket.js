@@ -6,7 +6,7 @@ import {getPizza} from "../../../redux/action/Pizza";
 import {getDrinks} from "../../../redux/action/Drinks";
 import {ADD_TO_BASKET} from "../../../redux/types/types";
 import {Link} from "react-router-dom";
-import img from '../../../assets/img/headerLogo.png'
+import empty from '../../../assets/img/pngfind.com-cart-png-2727925.png'
 import Tabs from "./Tabs/TabsBasket";
 import BasketsBasket from "./BasketsBasket";
 
@@ -28,20 +28,21 @@ const Basket = () => {
     //     dispatch(getDrinks())
     // }, [])
     return (
-        <section id="basket" className="">
+        <section id="basket" className="py-[150px]">
             <div className="container">
                 {
                     basket.length === 0 ?
-                        <div className="">
-                            <p className="text-black">Корзина пустая!</p>
+                        <div className="flex flex-col items-center">
+                            <img src={empty} className="w-[50%] mb-3" alt=""/>
+                            <h1 className="text-black text-xl mb-3">Корзина пустая!</h1>
                             <Link to="/">
                                 <button
-                                    className="w-[100px] h-[30px] bg-orange-500 rounded-2xl text-[20px] text-white">Назад
+                                    className="px-[10px] py-[5px] bg-orange-500 rounded text-white">Вернуться в меню
                                 </button>
                             </Link>
                         </div>
                         :
-                        <div className="py-[150px]">
+                        <div className="">
                         <div className="flex flex-row justify-between flex-wrap">
                                 <BasketsBasket/>
                                 <div className="basket-order text-black p-[15px] w-[40%] shadow-2xl">
