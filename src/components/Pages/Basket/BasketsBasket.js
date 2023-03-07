@@ -19,15 +19,14 @@ const BasketsBasket = () => {
         dispatch(getDrinks())
     }, [])
     return (
-        <div className="basket-basket w-[55%] p-[15px] bg-black text-white rounded-xl">
+        <div className="basket-basket w-[55%] p-[15px] text-black shadow-2xl rounded-xl">
             <div className="flex flex-col">
-                <div className="border-b flex justify-between border-gray-500">
-                    <h1>Корзина</h1>
+                <div className="mb-2">
+                    <h1 className="text-2xl text-orange-500 font-bold">Корзина</h1>
                 </div>
                 {/*{*/}
                 {/*    basket.map((el, idx) => (*/}
-                <div
-                    className="flex justify-between flex-wrap items-center border-b border-dashed border-gray-500 my-2">
+                <div className="flex justify-between bg-[#DFDFDF] p-[10px] rounded flex-wrap items-center border-b border-dashed border-gray-500 my-2">
                     <div className="">
                         {/*<img src={el.image} className="basket-table-td-img ml-3" alt=""/>*/}
                         <img src={img} className="" alt=""/>

@@ -86,40 +86,23 @@ const Home = () => {
                     </Slider>
                     <div className="home">
                         <Tabs/>
-                        <div className="pt-[100px] ">
+                        <div className="mt-[100px] ">
                             <div className="home-meals flex flex-wrap flex-row justify-between">
-                                <div className="w-[250px] h-[300px] shadow-2xl mx-2 rounded-xl my-14">
-                                    <div className="-mt-[80px] ml-[30px]">
-                                        <img src={Slide} className="w-[150px] h-[150px] ml-[15px]  rounded-full" alt="photo"/>
+                                <div className="home-meals-meal flex flex-col w-[280px] shadow-gray-400 mx-2 rounded-xl my-14">
+                                    <div className=" flex justify-center">
+                                        <img src={Slide} className="home-meals-meal-img w-[150px] h-[150px] rounded-full" alt="photo"/>
                                     </div>
-                                    <div className="flex flex-col p-[10px]">
+                                    <div className="home-meals-meal-texts flex flex-col w-full p-[10px]">
                                         <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>
-                                        <p className=" mb-[10px] mt-[5px] text-[12px]"> Очкень вкусный ты только попробуй это тебе нравится обещаю тебе Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
-                                        <div className="flex justify-center mt-[15px]">
-                                            <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
-                                                    onClick={() => dispatch(addToBasket())}>
-                                                В Корзину
-                                                за c.
-                                            </button>
+                                        <p className=" mb-[10px] mt-[5px] text-[12px]">Очкень вкусный ты только попробуй это тебе нравится обещаю тебе</p>
                                     </div>
+                                    <div className="flex justify-around items-center mt-[15px]">
+                                        <p>223 руб.</p>
+                                        <button className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl" onClick={() => dispatch(addToBasket())}>
+                                            В Корзину
+                                        </button>
                                     </div>
                                 </div>
-                                {/*{*/}
-                                {/*    catalog.map(el => (*/}
-                                {/*        <Routes>*/}
-                                {/*            <Route path="" element={*/}
-                                {/*                <PizzaCard el={el} key={el.id}/>*/}
-
-                                {/*            }/>*/}
-                                {/*            <Route path="/drinks" element={*/}
-                                {/*                <DrinksCard el={el} key={el.id}/>*/}
-                                {/*            }/>*/}
-                                {/*            <Route path="/sushi" element={*/}
-                                {/*                <FoodCard el={el} key={el.id}/>*/}
-                                {/*            }/>*/}
-                                {/*        </Routes>*/}
-                                {/*    ))*/}
-                                {/*}*/}
                             </div>
                         </div>
                     </div>
