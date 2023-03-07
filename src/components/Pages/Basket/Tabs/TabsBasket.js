@@ -5,7 +5,7 @@ const Tab = ({ activeTab, label, onClick }) => {
 
     return (
         <div
-            className={`cursor-pointer p-[10px] rounded  ${isActive ? "bg-orange-500" : ""}`}
+            className={`cursor-pointer p-[10px] rounded  ${isActive ? "bg-orange-500 text-white" : ""}`}
             onClick={() => onClick(label)}
         >
             {label}

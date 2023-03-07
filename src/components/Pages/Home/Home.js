@@ -88,9 +88,9 @@ const Home = () => {
                         <Tabs/>
                         <div className="mt-[100px] ">
                             <div className="home-meals flex flex-wrap flex-row justify-between">
-                                <div className="home-meals-meal flex flex-col w-[280px] shadow-gray-400 mx-2 rounded-xl my-14">
+                                <div className="home-meals-meal flex flex-col w-[280px] shadow-2xl p-[10px] mx-2 rounded-xl my-14">
                                     <div className=" flex justify-center">
-                                        <img src={Slide} className="home-meals-meal-img w-[150px] h-[150px] rounded-full" alt="photo"/>
+                                        <img src={Slide} className="home-meals-meal-img w-[150px] h-[150px] " alt="photo"/>
                                     </div>
                                     <div className="home-meals-meal-texts flex flex-col w-full p-[10px]">
                                         <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с рыбой</h3>

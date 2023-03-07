@@ -1,10 +1,12 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import './styles/media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -18,4 +20,8 @@ a {
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.logo-text {
+    font-family: 'Yatra One', cursive;    font-weight: bolder;
 }

@@ -28,7 +28,7 @@ const Basket = () => {
     //     dispatch(getDrinks())
     // }, [])
     return (
-        <section id="basket">
+        <section id="basket" className="">
             <div className="container">
                 {
                     basket.length === 0 ?
@@ -41,32 +41,34 @@ const Basket = () => {
                             </Link>
                         </div>
                         :
-                        <div className="my-[100px] flex flex-row justify-between flex-wrap">
-                            <BasketsBasket/>
-                            <div className="basket-order text-white p-[15px] w-[40%] bg-orange-900">
-                                <h1 className="text-center font-bold text-2xl text-white ">Оформление заказа</h1>
-                                <div className="">
-                                    <Tabs>
-                                        <div label="Доставка" className="">
-                                            <h1 className="">Контактные
-                                                данные</h1>
-                                            <input
-                                                className="rounded w-full py-2 px-3 text-black outline-none my-2"
-                                                type="text" placeholder="Фио*"/>
-                                            <input
-                                                className="rounded w-full text-black py-2 px-3 outline-none my-2"
-                                                type="tel" placeholder="Телефон*" />
-                                            <h1 className="">Укажите адрес</h1>
-                                            <input
-                                                className="rounded w-full text-black py-2 px-3 outline-none my-2"
-                                                type="tel" placeholder="Адрес" />
-                                            <button>Отправить</button>
-                                        </div>
-                                        <div label="Самовызов">
-                                            <input type="text" placeholder="Напишите время когда вы заберете"
-                                                   className="rounded w-full text-black py-2 px-3 outline-none my-2"/>
-                                        </div>
-                                    </Tabs>
+                        <div className="py-[150px]">
+                        <div className="flex flex-row justify-between flex-wrap">
+                                <BasketsBasket/>
+                                <div className="basket-order text-black p-[15px] w-[40%] shadow-2xl">
+                                    <h1 className="text-center font-bold text-2xl  ">Оформление заказа</h1>
+                                    <div className="">
+                                        <Tabs>
+                                            <div label="Доставка" className="">
+                                                <h1 className="">Контактные
+                                                    данные</h1>
+                                                <input
+                                                    className="rounded w-full py-2 px-3 text-black border border-gray-500 outline-none my-2"
+                                                    type="text" placeholder="Фио*"/>
+                                                <input
+                                                    className="rounded w-full text-black py-2 px-3 border border-gray-500 outline-none my-2"
+                                                    type="tel" placeholder="Телефон*" />
+                                                <h1 className="">Укажите адрес</h1>
+                                                <input
+                                                    className="rounded w-full text-black py-2 px-3 border border-gray-500 outline-none my-2"
+                                                    type="tel" placeholder="Адрес" />
+                                                <button className="px-[10px] py-[5px] bg-orange-500 text-white rounded">Отправить</button>
+                                            </div>
+                                            <div label="Самовызов">
+                                                <input type="text" placeholder="Напишите время когда вы заберете"
+                                                       className="rounded w-full text-black py-2 px-3 outline-none my-2"/>
+                                            </div>
+                                        </Tabs>
+                                    </div>
                                 </div>
                             </div>
                         </div>

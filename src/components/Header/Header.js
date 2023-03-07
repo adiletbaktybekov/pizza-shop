@@ -13,7 +13,7 @@ const Header = () => {
         return acc + el.quantity
     }, 0)
     return (
-        <header className="header bg-white">
+        <header className="header bg-white fixed w-full z-10">
             <div className="container">
                 <div className="header-global flex justify-between h-[100px] text-black pt-[20px]">
                     <div className="head-logo">

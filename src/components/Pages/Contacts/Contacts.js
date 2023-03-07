@@ -3,7 +3,7 @@ import GoogleMapComponent from "./Map/GoogleMapComponent";
 
 const Contacts = () => {
     return (
-        <section id="contacts">
+        <section id="contacts" className="py-[150px]">
             <div className="container">
                 <div className="text-black contacts">
                     <h1 className="contacts-title  flex justify-center">Контакты</h1>

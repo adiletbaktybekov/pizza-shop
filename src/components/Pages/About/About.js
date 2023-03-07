@@ -3,7 +3,7 @@ import pizzaTeam from '../../../assets/img/sushi-roll-295089.svg'
 
 const About = () => {
     return (
-        <div className="about py-[30px]">
+        <div className="about py-[150px]">
             <div className="container">
                 <div className="about-first flex justify-between">
                     <div className="about-first-texts flex flex-col w-[60%]">
