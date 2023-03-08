@@ -50,16 +50,16 @@ const BurgerMenu = () => {
                         <p className="mt-1 mb-4">
                             <a href="tel:+7 968 882-92-92">+7 968 882-92-92</a>
                         </p>
-                        <div className="flex justify-around">
-                            <Link to="/">
-                                <BsWhatsapp className="text-[30px]"/>
-                            </Link>
-                            <Link to="/">
-                                <BsTelegram className="text-[30px]"/>
-                            </Link>
-                            <Link to="/">
-                                <IoMail className="text-[30px]"/>
-                            </Link>
+                        <div className="flex justify-around  text-[30px]">
+                            <a href="https://wa.me/+79688829292" target="_blank">
+                                <BsWhatsapp className=""/>
+                            </a>
+                            <a href="https://t.me/adilet_baktybekov" target="_blank" className="mx-3">
+                                <BsTelegram className=""/>
+                            </a>
+                            <a href="mailto:mysushiru@gmail.com" target="_blank">
+                                <IoMail className=""/>
+                            </a>
                         </div>
                     </div>
                 </div>
