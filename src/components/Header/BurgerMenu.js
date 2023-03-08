@@ -61,9 +61,7 @@ const BurgerMenu = () => {
                                 <IoMail className=""/>
                             </a>
                         </div>
-                        <h1>График работы:</h1>
-                        <p>10:00 - 22:00</p>
-                    </div>
+                     </div>
                 </div>
 
             </div>

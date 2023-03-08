@@ -15,7 +15,7 @@ const SignupSchema = Yup.object().shape({
 const FormCall = () => {
     return (
         <div>
-            <h1 className="text-2xl text-center mb-5">Помогите нам стать лучше!</h1>
+            <h1 className="text-3xl text-orange-500 font-bold text-center mb-5">Помогите нам стать лучше!</h1>
             <div>
                 <Formik validationSchema={SignupSchema}
                         onSubmit={(values, actions) => {
