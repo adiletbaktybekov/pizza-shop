@@ -5,14 +5,15 @@ import {BsTelegram} from "react-icons/bs";
 import {IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp} from "react-icons/io";
 import {FaCcMastercard} from "react-icons/fa";
 import {SiVisa} from "react-icons/si";
+import LogoNew from "../../assets/img/newLogo.png";
 
 const Footer = () => {
     return (
         <section className="footer bg-black">
             <div className="container">
                 <div className="flex justify-center">
-                    <Link to="/">
-                        <img src={Logo} alt="" className="mt-[30px]"/>
+                    <Link className="flex items-center mt-[30px]" to="/"><img src={LogoNew} className="w-[70px] rounded-full" alt=""/>
+                        <h1 className="logo-text uppercase mx-2 text-2xl font-bold text-orange-500">My Sushi</h1>
                     </Link>
                 </div>
                 <div className="footer-global text-2xl   text-white pt-[50px] pb-[50px] flex flex-row flex-wrap justify-between">

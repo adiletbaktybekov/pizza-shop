@@ -30,8 +30,8 @@ const Header = () => {
                               className="header-nav-item  mx-[20px] text-[16px] font-bold inline-block border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">Контакты</Link>
                     </div>
                     <div className="header-nav flex flex-col mt-[10px]">
-                        <a href="tel:+380441234567" className="">+38 (044) 123-45-67</a>
-                        <a href="tel:+380441234567" className="">+38 (044) 123-45-67</a>
+                        <h1 className="">Звоните по номеру телефона:</h1>
+                        <a href="tel:+7 968 882-92-92" className="">+7 968 882-92-92</a>
                     </div>
                         {/*<Link to="/" className="header-nav">*/}
                         {/*    <BsMoonStarsFill style={{color: "#f97316"}} className="header-cart w-[30px] h-[30px] mt-[20px]"/>*/}

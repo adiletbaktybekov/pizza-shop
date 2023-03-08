@@ -33,7 +33,7 @@ const Basket = () => {
                 {
                     basket.length === 0 ?
                         <div className="flex flex-col items-center">
-                            <img src={empty} className="w-[50%] mb-3" alt=""/>
+                            <img src={empty} className="w-[70%] mb-3" alt=""/>
                             <h1 className="text-black text-xl mb-3">Корзина пустая!</h1>
                             <Link to="/">
                                 <button
