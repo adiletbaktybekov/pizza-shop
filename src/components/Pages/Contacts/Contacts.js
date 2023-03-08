@@ -12,16 +12,16 @@ const Contacts = () => {
             <div className="container">
                 <div className="text-black mb-5">
                     <h1 className="text-4xl mb-[20px] font-bold text-orange-500">Контакты</h1>
-                    {/*<div className="flex flex-row justify-around flex-wrap ">*/}
-                    <div>
+                    <div className="flex flex-row justify-between items-center flex-wrap ">
+                    <div className='m-2'>
                         <h1 className="text-2xl font-normal">Наши номера:</h1>
-                        <a href="tel:+7 968 882-92-92" className="">+7 968 882-92-92</a>
+                        <a href="tel:+7 968 882-92-92" className="text-xl">+7 968 882-92-92</a>
                     </div>
-                    <div className="my-[10px]">
-                        <h1 className="text-2xl font-normal">Вопросы, отзывы и предложения:</h1>
-                        <a href="mailto:mysushiru@gmail.com">mysushiru@gmail.com</a>
+                    <div className="mx-2">
+                        <h1 className="text-2xl">Вопросы, отзывы и предложения:</h1>
+                        <a href="mailto:mysushiru@gmail.com" className="text-xl">mysushiru@gmail.com</a>
                     </div>
-                    <div className="">
+                    <div className="m-2">
                         <h1 className="text-2xl">Мы в соц сетях</h1>
                         <div className="flex text-[30px]">
                             <a href="https://wa.me/+79688829292" target="_blank">
@@ -34,6 +34,12 @@ const Contacts = () => {
                                 <IoMail className=""/>
                             </a>
                         </div>
+
+                    </div>
+                        <div className="m-2">
+                        <h1 className="text-2xl">График работы:</h1>
+                        <p className="text-xl">10:00 - 22:00</p>
+                    </div>
                     </div>
                 </div>
             </div>

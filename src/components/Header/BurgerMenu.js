@@ -50,7 +50,7 @@ const BurgerMenu = () => {
                         <p className="mt-1 mb-4">
                             <a href="tel:+7 968 882-92-92">+7 968 882-92-92</a>
                         </p>
-                        <div className="flex justify-around  text-[30px]">
+                        <div className="flex justify-around text-[30px]">
                             <a href="https://wa.me/+79688829292" target="_blank">
                                 <BsWhatsapp className=""/>
                             </a>
@@ -61,6 +61,8 @@ const BurgerMenu = () => {
                                 <IoMail className=""/>
                             </a>
                         </div>
+                        <h1>График работы:</h1>
+                        <p>10:00 - 22:00</p>
                     </div>
                 </div>
 

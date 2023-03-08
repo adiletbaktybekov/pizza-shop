@@ -68,8 +68,9 @@ const Home = () => {
     }, [])
     return (
         <section id="home">
-            <div className="homeGlobal bg-white pt-[50px]">
+            <div className="homeGlobal bg-white pt-[150px]">
                 <div className="container">
+                    <h1 className="text-center text-4xl mb-[50px]">Теперь вы сможете заказать ваши любимые суши не выходя из дома</h1>
                     <Slider {...settings}>
                         <div className="">
                             <img src={Slide} className=" w-[100%] h-[100%]" alt=""/>
