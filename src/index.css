@@ -25,3 +25,10 @@ a {
 .logo-text {
     font-family: 'Yatra One', cursive;    font-weight: bolder;
 }
+
+
+.react-tel-input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}

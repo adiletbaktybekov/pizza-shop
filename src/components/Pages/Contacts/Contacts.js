@@ -1,9 +1,10 @@
 import React from 'react';
 import GoogleMapComponent from "./Map/GoogleMapComponent";
-import {Link} from "react-router-dom";
-import {BsInstagram, BsTelegram, BsWhatsapp} from "react-icons/bs";
+import {BsTelegram, BsWhatsapp} from "react-icons/bs";
 import {IoMail} from "react-icons/io5";
 import {Accordion} from "../../Accordion/AccordionTailwind";
+import FormCall from "./Form";
+import Accord from "../../Accordion/Accord";
 
 const Contacts = () => {
     return (
@@ -40,22 +41,10 @@ const Contacts = () => {
                 <GoogleMapComponent/>
             </div>
             <div className="container">
-                <div className="form flex">
-                    <div className="form2 ">
-                        <form className=" flex flex-col">
-                            <p className="form-desc  ">Опишите суть вопроса, ситуации</p>
-                            <input type="text" className="form-text  "
-                                   placeholder="Опишите суть вопроса, ситуации. . ."/>
-                            <button className="form-btn ">Отправить</button>
-                        </form>
-                    </div>
+                <div>
+                    <FormCall/>
                 </div>
-                <Accordion title="Почему мы?">
-                    <p className="text-gray-700">Потому что мы лучшие</p>
-                </Accordion>
-                <Accordion title="Где находимся мы?">
-                    <p className="text-gray-700">Москва</p>
-                </Accordion>
+             <Accord/>
             </div>
         </section>
     );

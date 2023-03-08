@@ -1,5 +1,7 @@
 import React from 'react';
 import pizzaTeam from '../../../assets/img/sushi-roll-295089.svg'
+import FormCall from "../Contacts/Form";
+import Accord from "../../Accordion/Accord";
 
 const About = () => {
     return (
@@ -17,6 +19,12 @@ const About = () => {
                     <div>
                         <img src={pizzaTeam} className="about-first-img rounded-3xl mt-[100px] w-[100%]" alt=""/>
                     </div>
+                </div>
+                <div className="my-[50px]">
+                    <FormCall/>
+                </div>
+                <div>
+                    <Accord/>
                 </div>
             </div>
         </div>

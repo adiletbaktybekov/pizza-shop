@@ -16,6 +16,7 @@
     "react-dom": "^18.0.0",
     "react-google-maps": "^9.4.5",
     "react-icons": "^4.3.1",
+    "react-phone-input-2": "^2.15.1",
     "react-redux": "^7.2.8",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
@@ -26,7 +27,8 @@
     "sass": "^1.49.10",
     "slick-carousel": "^1.8.1",
     "thunk": "^0.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

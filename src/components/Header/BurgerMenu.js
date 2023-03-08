@@ -47,7 +47,9 @@ const BurgerMenu = () => {
                     </div>
                     <div className="mt-[100px]">
                         <h1 className="">Звоните по номеру телефона:</h1>
-                        <p className="mt-1 mb-2">+7 968 882-92-92</p>
+                        <p className="mt-1 mb-4">
+                            <a href="tel:+7 968 882-92-92">+7 968 882-92-92</a>
+                        </p>
                         <div className="flex justify-around">
                             <Link to="/">
                                 <BsWhatsapp className="text-[30px]"/>
