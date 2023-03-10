@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import img from "../../../assets/img/headerLogo.png";
 import {ImCross} from "react-icons/im";
 import {useDispatch, useSelector} from "react-redux";
 import {getPizza} from "../../../redux/action/Pizza";

@@ -7,6 +7,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f97316;
+}
+
+
 * {
     margin: 0;
     padding: 0;

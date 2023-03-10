@@ -1,10 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Logo from '../../assets/img/headerLogo.png'
 import LogoNew from '../../assets/img/newLogo.png'
 import {TiShoppingCart} from "react-icons/ti";
 import {useSelector} from "react-redux";
-import {BsMoonStarsFill} from "react-icons/bs";
 import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {

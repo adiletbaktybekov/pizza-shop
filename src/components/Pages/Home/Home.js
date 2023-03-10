@@ -1,64 +1,58 @@
 import React, {useEffect} from 'react';
 import Slider from "react-slick";
-import Slide from '../../../assets/img/unsplash_gJW-pfaqihA.png'
 import saleCola from '../../../assets/img/sale.png'
-import {Routes, Link, Route} from "react-router-dom";
+import saleHit from '../../../assets/img/hitSushiSale.png'
+import saleDost from '../../../assets/img/dostavkaSale.png'
+import saleMain from '../../../assets/img/mainSale.png'
 import {useDispatch, useSelector} from "react-redux";
-import {GET_SORTED_PRODUCTS} from "../../../redux/types/types";
-import {getPizza} from "../../../redux/action/Pizza";
-import {getDrinks} from "../../../redux/action/Drinks";
-import {getFoods} from "../../../redux/action/Foods";
-import PizzaCard from "../../Cards/meals-cards/PizzaCard";
-import DrinksCard from "../../Cards/meals-cards/DrinksCard";
-import FoodCard from "../../Cards/meals-cards/FoodCard";
 import {addToBasket} from "../Basket/Basket";
-import {TiShoppingCart} from "react-icons/ti";
-import {GiSushis, GiPizzaSlice} from "react-icons/gi";
-import laghman from '../../../assets/img/5793800.png'
-import {MdRamenDining} from "react-icons/md";
 import Tabs from "./Tabs";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 3000,
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: true,
-
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+            {
+                breakpoint: 912,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
     }
     const catalog = useSelector(state => state.catalog)
     console.log(catalog, "catalog")
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getPizza())
-    }, [])
-    useEffect(() => {
-        dispatch(getDrinks())
-    }, [])
-    useEffect(() => {
-        dispatch(getFoods())
-    }, [])
     return (
         <section id="home">
             <div className="homeGlobal bg-white pt-[150px]">
                 <div className="container">
                     <Slider {...settings}>
                         <div className="">
-                            <img src={saleCola} className=" w-[90%]" alt=""/>
+                            <img src={saleMain} className="slide-img w-[90%]" alt=""/>
                         </div>
                         <div className="">
-                            <img src={saleCola} className=" w-[90%]" alt=""/>
+                            <img src={saleDost} className="slide-img w-[90%]" alt=""/>
                         </div>
                         <div className="">
-                            <img src={saleCola} className=" w-[90%]" alt=""/>
+                            <img src={saleHit} className="slide-img w-[90%]" alt=""/>
                         </div>
                         <div className="">
-                            <img src={saleCola} className=" w-[90%]" alt=""/>
-                        </div>
-                        <div className="">
-                            <img src={saleCola} className=" w-[90%]" alt=""/>
+                            <img src={saleCola} className="slide-img w-[90%]" alt=""/>
                         </div>
                     </Slider>
                     <div className="home">
@@ -68,8 +62,7 @@ const Home = () => {
                                 <div
                                     className="home-meals-meal flex flex-col w-[280px] shadow-2xl p-[10px] mx-2 rounded-xl my-14">
                                     <div className=" flex justify-center">
-                                        <img src={Slide} className="home-meals-meal-img w-[200px] h-[200px] "
-                                             alt="photo"/>
+                                        <img src={saleMain} className="home-meals-meal-img w-[200px] h-[200px] " alt="photo"/>
                                     </div>
                                     <div className="home-meals-meal-texts flex flex-col w-full p-[10px]">
                                         <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с

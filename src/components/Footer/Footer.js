@@ -1,10 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/img/FooterLogo.svg'
 import {Link} from "react-router-dom";
-import {BsTelegram} from "react-icons/bs";
-import {IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp} from "react-icons/io";
-import {FaCcMastercard} from "react-icons/fa";
-import {SiVisa} from "react-icons/si";
 import LogoNew from "../../assets/img/newLogo.png";
 
 const Footer = () => {

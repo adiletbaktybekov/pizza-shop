@@ -29,12 +29,12 @@
   .header .head-burger {
     order: 0;
   }
+  #home .slide-img{
+    width: 100%;
+  }
   #home .homeGlobal {
     padding-top: 200px;
   }
-  #home .home-meals {
-  }
-
   #basket .basket-basket {
     width: 100%;
   }
@@ -54,9 +54,6 @@
   }
   .about .about-second-text {
     margin-left: 0;
-  }
-  #contacts .form {
-    //justify-content: ;
   }
 }
 

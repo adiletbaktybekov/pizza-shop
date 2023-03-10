@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import GoogleMapComponent from "./Map/GoogleMapComponent";
 import {BsTelegram, BsWhatsapp} from "react-icons/bs";
 import {IoMail} from "react-icons/io5";
-import {Accordion} from "../../Accordion/AccordionTailwind";
 import FormCall from "./Form";
 import Accord from "../../Accordion/Accord";
 
 const Contacts = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
     return (
         <section id="contacts" className="py-[150px]">
             <div className="container">

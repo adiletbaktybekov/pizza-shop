@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import pizzaTeam from '../../../assets/img/sushi-roll-295089.svg'
 import pizzas from '../../../assets/img/pizzasImg.jpeg'
 import FormCall from "../Contacts/Form";
 import Accord from "../../Accordion/Accord";
-import {MdOutlineQuestionAnswer} from "react-icons/md";
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
     return (
         <div className="about py-[150px]">
             <div className="container">

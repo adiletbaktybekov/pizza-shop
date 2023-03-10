@@ -1,9 +1,5 @@
 import React, {useEffect} from "react"
-import {useDispatch, useSelector} from "react-redux";
-import {BsFillTrashFill} from "react-icons/bs";
-import {ImCross} from "react-icons/im"
-import {getPizza} from "../../../redux/action/Pizza";
-import {getDrinks} from "../../../redux/action/Drinks";
+import {useSelector} from "react-redux";
 import {ADD_TO_BASKET} from "../../../redux/types/types";
 import {Link} from "react-router-dom";
 import empty from '../../../assets/img/pngfind.com-cart-png-2727925.png'
@@ -20,13 +16,10 @@ const Basket = () => {
     // const totalSum = basket.reduce((acc, el) => {
     //     return el.quantity * el.price + acc
     // }, 0)
-    // useEffect(() => {
-    //     dispatch(getPizza())
-    // }, [])
-    //
-    // useEffect(() => {
-    //     dispatch(getDrinks())
-    // }, [])
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
     return (
         <section id="basket" className="py-[150px]">
             <div className="container">
