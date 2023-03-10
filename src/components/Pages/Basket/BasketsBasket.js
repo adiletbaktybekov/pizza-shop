@@ -3,6 +3,7 @@ import {ImCross} from "react-icons/im";
 import {useDispatch, useSelector} from "react-redux";
 import {getPizza} from "../../../redux/action/Pizza";
 import {getDrinks} from "../../../redux/action/Drinks";
+import img  from '../../../assets/img/mainSale.png'
 import {BiMinusCircle, BiPlusCircle} from "react-icons/bi";
 
 const BasketsBasket = () => {
