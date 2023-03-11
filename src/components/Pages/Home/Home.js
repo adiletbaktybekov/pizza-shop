@@ -7,6 +7,8 @@ import saleMain from '../../../assets/img/mainSale.png'
 import {useDispatch, useSelector} from "react-redux";
 import {addToBasket} from "../Basket/Basket";
 import Tabs from "./Tabs";
+import {AiFillHeart} from "react-icons/ai";
+import {BiMinusCircle, BiPlusCircle} from "react-icons/bi";
 
 const Home = () => {
     useEffect(() => {
@@ -37,6 +39,9 @@ const Home = () => {
     const catalog = useSelector(state => state.catalog)
     console.log(catalog, "catalog")
     const dispatch = useDispatch()
+    const addToBasket = (item) => {
+        dispatch({type: "ADD_TO_BASKET", payload: item})
+    }
     return (
         <section id="home">
             <div className="homeGlobal bg-white pt-[150px]">
@@ -59,26 +64,33 @@ const Home = () => {
                         <Tabs/>
                         <div className="mt-[100px] ">
                             <div className="home-meals flex flex-wrap flex-row justify-between">
-                                <div
-                                    className="home-meals-meal flex flex-col w-[280px] shadow-2xl p-[10px] mx-2 rounded-xl my-14">
-                                    <div className=" flex justify-center">
-                                        <img src={saleMain} className="home-meals-meal-img w-[200px] h-[200px] " alt="photo"/>
-                                    </div>
-                                    <div className="home-meals-meal-texts flex flex-col w-full p-[10px]">
-                                        <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">Суши с
-                                            рыбой</h3>
-                                        <p className=" mb-[10px] mt-[5px] text-[12px]">Очкень вкусный ты только попробуй
-                                            это тебе нравится обещаю тебе</p>
-                                    </div>
-                                    <div className="flex justify-around items-center mt-[15px]">
-                                        <p>223 руб.</p>
-                                        <button
-                                            className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
-                                            onClick={() => dispatch(addToBasket())}>
-                                            В Корзину
-                                        </button>
-                                    </div>
-                                </div>
+                                {
+                                    catalog.map((el, idx) => (
+                                        <div
+                                            className="home-meals-meal flex flex-col w-[280px]  shadow-2xl p-[10px] mx-2 rounded-xl my-14"
+                                            key={el.id}>
+                                                <img src={el.img} className="rounded-t-xl"
+                                                     alt="photo"/>
+                                            <div className="home-meals-meal-texts flex flex-col w-full p-[10px]">
+                                                <h3 className="text-black mb-[10px] mt-[5px] text-[20px] text-center">{el.name}</h3>
+                                                <p className=" mb-[10px] mt-[5px] text-[12px]">{el.description}</p>
+                                            </div>
+                                            <div className="flex justify-around items-center mt-[15px]">
+                                                <div className=" bg-orange-500 py-1 rounded">
+                                                    <button className="mx-1 rounded-full text-white focus:text-black focus:bg-white px-[3px]">{el.option.mini}</button>
+                                                    <button className="mx-1 rounded-full text-white focus:text-black focus:bg-white px-[3px]">{el.option.big}</button>
+                                                </div>
+                                                <p>{el.price}</p>
+                                                <button
+                                                    className="text-white p-[5px] bg-orange-500 hover:bg-[#f4eade] border-2 hover:text-orange-500 border-orange-500 rounded rounded-2xl"
+                                                    onClick={() => addToBasket(el)}>
+                                                    В Корзину
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

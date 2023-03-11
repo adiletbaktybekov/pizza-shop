@@ -7,6 +7,7 @@ import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
     const {basket} = useSelector(s => s)
+
     const quantity = basket.reduce((acc, el) => {
         return acc + el.quantity
     }, 0)
@@ -46,7 +47,7 @@ const Header = () => {
                     </div>
                     <BurgerMenu/>
                 </div>
-                <div className="flex justify-center w-full items-center border border-b border-b-4 border-orange-500"></div>
+                <div className="flex justify-center w-full items-center border border-b border-b-3 border-orange-500"></div>
             </div>
         </header>
     );

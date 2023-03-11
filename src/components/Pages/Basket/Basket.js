@@ -1,6 +1,6 @@
 import React, {useEffect} from "react"
 import {useSelector} from "react-redux";
-import {ADD_TO_BASKET} from "../../../redux/types/types";
+// import {ADD_TO_BASKET} from "../../../../../pizza-shop/src/redux/types/types";
 import {Link} from "react-router-dom";
 import empty from '../../../assets/img/pngfind.com-cart-png-2727925.png'
 import Tabs from "./Tabs/TabsBasket";

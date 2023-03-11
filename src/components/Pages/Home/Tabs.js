@@ -31,6 +31,16 @@ const Tabs = () => {
                             Суши
                         </h1>
                     </Link>
+                    <Link to="sushi">
+                        <h1 className="text-xl mx-3">
+                            Супы
+                        </h1>
+                    </Link>
+                    <Link to="sushi">
+                        <h1 className="text-xl mx-3">
+                            Wok
+                        </h1>
+                    </Link>
                 </div>
             </div>
         </div>

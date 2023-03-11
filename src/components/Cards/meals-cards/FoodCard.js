@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {addToBasket} from "../../Pages/Basket/Basket";
 import {useDispatch} from "react-redux";
-import MealImage from '../../../assets/img/meal52345.png'
+import MealImage from '../../../../../pizza-shop2/src/assets/img/meal52345.png'
 // import {getFoods} from "../../../redux/action/Foods";
 
 const PizzaCard = ({el}) => {
