@@ -13,7 +13,7 @@ const initialState = {
     catalog: [
         {
             id:1,
-            name:"Суши с рыбой",
+            name: "с рыбой",
             description:'Рыба, Рис, кетчуп',
             option:{
                 big:30,
@@ -60,7 +60,7 @@ const initialState = {
     // singleProduct: [],
     basket: [],
     // products: [],
-    favorites:[],
+    // favorites:[],
 }
 
 

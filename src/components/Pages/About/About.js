@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import pizzaTeam from '../../../assets/img/sushi-roll-295089.svg'
 import pizzas from '../../../assets/img/pizzasImg.jpeg'
-import FormCall from "../Contacts/Form";
+import FormCall from "../../Forms/Form";
 import Accord from "../../Accordion/Accord";
 
 const About = () => {

@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import GoogleMapComponent from "./Map/GoogleMapComponent";
+import GoogleMapComponent from "../../Map/GoogleMapComponent";
 import {BsTelegram, BsWhatsapp} from "react-icons/bs";
 import {IoMail} from "react-icons/io5";
-import FormCall from "./Form";
+import FormCall from "../../Forms/Form";
 import Accord from "../../Accordion/Accord";
 
 const Contacts = () => {

@@ -3,7 +3,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import {Form, Formik} from "formik";
 import * as Yup from 'yup';
-import question from '../../../assets/img/question2.0.png'
+import question from '../../assets/img/question2.0.png'
 
 const SignupSchema = Yup.object().shape({
     firstName: Yup.string()

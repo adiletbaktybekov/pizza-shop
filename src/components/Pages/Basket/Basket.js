@@ -3,8 +3,8 @@ import {useSelector} from "react-redux";
 // import {ADD_TO_BASKET} from "../../../../../pizza-shop/src/redux/types/types";
 import {Link} from "react-router-dom";
 import empty from '../../../assets/img/pngfind.com-cart-png-2727925.png'
-import Tabs from "./Tabs/TabsBasket";
-import BasketsBasket from "./BasketsBasket";
+import Tabs from "../../Tabs/TabsBasket";
+import BasketCard from "../../Cards/BasketCard";
 
 export const addToBasket = (item) => {
     return {type: "ADD_TO_BASKET", payload: item}
@@ -37,7 +37,7 @@ const Basket = () => {
                         :
                         <div className="">
                         <div className="flex flex-row justify-between flex-wrap">
-                                <BasketsBasket/>
+                                <BasketCard/>
                                 <div className="basket-order text-black p-[15px] w-[40%] h-full shadow-2xl">
                                     <h1 className="text-center font-bold text-2xl  ">Оформление заказа</h1>
                                     <div className="">

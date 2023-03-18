@@ -1,9 +1,5 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import {BsInfoLg, BsMoonStarsFill, BsTelegram, BsWhatsapp} from "react-icons/bs";
-import {IoIosContact} from "react-icons/io";
-import {FaPizzaSlice} from "react-icons/fa";
-import {IoMail} from "react-icons/io5";
 
 const BurgerMenu = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,22 +21,19 @@ const BurgerMenu = () => {
                     </svg>
                 </div>
                 <div className="">
-                    <div className="flex flex-col text-[35px] mt-[100px]">
+                    <div className="flex flex-col justify-center text-[35px] mt-[100px]">
                         <div
-                            className="flex flex-row items-center  border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
-                            <FaPizzaSlice/>
+                            className="border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
                             <Link onClick={() => setIsNavOpen(false)} to="/" className="mx-4 ">
                                 Меню</Link>
                         </div>
                         <div
-                            className=" flex flex-row items-center  border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
-                            <BsInfoLg/>
+                            className="border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
                             <Link onClick={() => setIsNavOpen(false)} to="/about" className="mx-4">
                                 О нас</Link>
                         </div>
                         <div
-                            className=" flex flex-row  items-center  border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
-                            <IoIosContact/>
+                            className="border-b-2 border-transparent  hover:text-orange-500 hover:border-orange-500">
                             <Link onClick={() => setIsNavOpen(false)} to="/contacts" className="mx-4 ">
                                 Контакты</Link>
                         </div>
@@ -50,17 +43,6 @@ const BurgerMenu = () => {
                         <p className="mt-1 mb-4">
                             <a href="tel:+7 968 882-92-92">+7 968 882-92-92</a>
                         </p>
-                        <div className="flex justify-around text-[30px]">
-                            <a href="https://wa.me/+79688829292" target="_blank">
-                                <BsWhatsapp className=""/>
-                            </a>
-                            <a href="https://t.me/adilet_baktybekov" target="_blank" className="mx-3">
-                                <BsTelegram className=""/>
-                            </a>
-                            <a href="mailto:mysushiru@gmail.com" target="_blank">
-                                <IoMail className=""/>
-                            </a>
-                        </div>
                      </div>
                 </div>
 

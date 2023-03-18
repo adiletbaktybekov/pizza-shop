@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {ImCross} from "react-icons/im";
 import {useDispatch, useSelector} from "react-redux";
-import img from '../../../assets/img/mainSale.png'
+import img from '../../assets/img/mainSale.png'
 import {BiMinusCircle, BiPlusCircle} from "react-icons/bi";
 
-const BasketsBasket = () => {
+const BasketCard = () => {
     const basket = useSelector(s => s.basket)
     const dispatch = useDispatch()
     const totalSum = basket.reduce((acc, el) => {
@@ -72,4 +72,4 @@ const BasketsBasket = () => {
     );
 };
 
-export default BasketsBasket;
+export default BasketCard;
