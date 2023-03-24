@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const MenuTabs = () => {
+const MenuCategoryTabs = () => {
     return (
         <div>
             <div className="mt-[80px]">
@@ -12,7 +12,7 @@ const MenuTabs = () => {
                                 Роллы
                             </Link>
                         </li><li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>
-                            <Link to="/">
+                            <Link to="">
                              Пиццы
                             </Link>
                         </li>
@@ -22,8 +22,8 @@ const MenuTabs = () => {
                             </Link>
                         </li>
                         <li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>
-                            <Link to="/">
-                                
+                            <Link to="drinks">
+                                Напитки
                             </Link>
                         </li>
                     </ul>
@@ -33,4 +33,4 @@ const MenuTabs = () => {
     );
 };
 
-export default MenuTabs;
+export default MenuCategoryTabs;

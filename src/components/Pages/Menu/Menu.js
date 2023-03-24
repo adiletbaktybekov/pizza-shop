@@ -4,9 +4,12 @@ import saleCola from '../../../assets/img/sale.png'
 import saleHit from '../../../assets/img/hitSushiSale.png'
 import saleDost from '../../../assets/img/dostavkaSale.png'
 import saleMain from '../../../assets/img/mainSale.png'
-import {useSelector} from "react-redux";
-import MenuTabs from "../../Tabs/MenuTabs";
+import {useDispatch, useSelector} from "react-redux";
+import MenuCategoryTabs from "../../Tabs/MenuCategoryTabs";
 import MenuCards from "../../Cards/MenuCards";
+import {getPizza} from "../../../redux/action/menuAction";
+import {Route, Routes} from "react-router-dom";
+import DrinkCard from "../../Cards/DrinkCard";
 
 const Menu = () => {
     useEffect(() => {
@@ -34,8 +37,14 @@ const Menu = () => {
             },
         ]
     }
+
     const catalog = useSelector(state => state.catalog)
     console.log(catalog, "catalog")
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getPizza())
+    }, [])
+
     return (
         <section id="home">
             <div className="homeGlobal bg-white pt-[200px]">
@@ -55,12 +64,20 @@ const Menu = () => {
                 </Slider>
                 <div className="container">
                     <div className="home">
-                        <MenuTabs/>
+                        <MenuCategoryTabs/>
                         <div className="">
                             <div className="home-meals flex flex-wrap flex-row justify-between">
                                 {
                                     catalog.map(el => (
-                                       <MenuCards el={el}/>
+                                        <Routes>
+                                            <Route path="" element={
+                                                <MenuCards el={el} key={el.id}/>
+                                            }/>
+                                            <Route path="/drinks" element={
+                                                <DrinkCard el={el} key={el.id}/>
+                                            }/>
+                                        </Routes>
+
                                     ))
                                 }
                             </div>
