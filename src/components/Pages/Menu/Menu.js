@@ -77,13 +77,14 @@ const Menu = () => {
                                             <Route path="/foods" element={
                                                 <FoodCards el={el} key={el.id}/>
                                             }/>
-                                            <Route path="/drinks" element={
-                                                <DrinkCard el={el} key={el.id}/>
-                                            }/>
-                                        </Routes>
-
+                                          </Routes>
                                     ))
                                 }
+                                <Routes>
+                                    <Route path="/drinks" element={
+                                        <DrinkCard/>
+                                    }/>
+                                </Routes>
                             </div>
                         </div>
                     </div>
