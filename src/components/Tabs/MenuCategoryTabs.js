@@ -9,16 +9,12 @@ const MenuCategoryTabs = () => {
                     <ul>
                         <li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>
                             <Link to="/">
-                                Роллы
-                            </Link>
-                        </li><li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>
-                            <Link to="">
-                             Пиццы
+                                Пиццы
                             </Link>
                         </li>
                         <li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>
-                            <Link to="/">
-                                Wok
+                            <Link to="foods">
+                               Роллы
                             </Link>
                         </li>
                         <li className='mx-2 text-xl inline-block  border-b-2 border-transparent hover:text-orange-500 hover:border-orange-500'>

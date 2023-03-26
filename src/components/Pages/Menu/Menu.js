@@ -10,6 +10,7 @@ import MenuCards from "../../Cards/MenuCards";
 import {getPizza} from "../../../redux/action/menuAction";
 import {Route, Routes} from "react-router-dom";
 import DrinkCard from "../../Cards/DrinkCard";
+import FoodCards from "../../Cards/FoodCards";
 
 const Menu = () => {
     useEffect(() => {
@@ -72,6 +73,9 @@ const Menu = () => {
                                         <Routes>
                                             <Route path="" element={
                                                 <MenuCards el={el} key={el.id}/>
+                                            }/>
+                                            <Route path="/foods" element={
+                                                <FoodCards el={el} key={el.id}/>
                                             }/>
                                             <Route path="/drinks" element={
                                                 <DrinkCard el={el} key={el.id}/>
